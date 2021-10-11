@@ -1,0 +1,55 @@
+.footer {
+    @include adaptiv-font(12, 14);
+    line-height: 1.333;
+    padding-top: 25px !important;
+    padding-bottom: 20px;
+
+    @include media('>=desktop') {
+        line-height: 22px;
+        padding-top: 48px !important;
+    }
+
+    a {
+        color: currentColor;
+        text-decoration: none;
+
+        @include hover {
+            text-decoration: underline;
+            color: $link-cr-font;
+        }
+    }
+
+    .social-icons {
+        @include adaptiv-font(16, 21);
+        @extend %listreset;
+        display: flex;
+        line-height: 1;
+
+        li {
+            margin-left: 12px;
+        }
+
+        a {
+            display: block;
+        }
+
+        .icon-linkedin {
+            @include adaptiv-font(18, 21);
+        }
+    }
+}
+
+.footer__container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer__left-container {
+    @include media('<phone') {
+        margin-bottom: 28px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
