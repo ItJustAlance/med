@@ -1,13 +1,10 @@
-import './header';
-import './isotope';
-import './elevate';
-import './modals';
-import './outline-fix';
-import './form-search';
-import './delete-divider';
-//import './full-page-scroll';
-import './about';
-import './contact';
-import './people';
-import './work';
-import './script';
+import $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
+//import 'slick-carousel';
+//import popper from "popper.js";
+//import bootstrap from "bootstrap";
+
+$(function() {
+    console.log('srcipt.js')
+});

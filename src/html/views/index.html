@@ -1,5 +1,5 @@
 <% var classes = {
-    bodyClass: "home-page"
+  bodyClass: "home-page"
 }; %>
 
 <%= _.template(require('./../includes/header.html').default)(classes) %>
@@ -9,3 +9,4 @@
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
 
+<%= _.template(require('./../includes/end-of-page.html').default)() %>
