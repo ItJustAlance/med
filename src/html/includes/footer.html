@@ -1,30 +1,61 @@
 <% var dataFooter = {
-    author: "Copyright 2020 Elevar Design Group"
+    author: "© МедЭксперт Сервис 2021"
 }; %>
-
-<footer class="footer section fp-auto-height">
-    <div class="footer__container container">
-        <div class="row justify-content-between align-items-center text-center text-sm-left">
-            <div class="col-sm-5 footer__left-container">
-                <p><%=dataFooter.author%></p>
-                <p>All rights reserved</p>
-            </div>
-
-            <div class="col-sm-6 footer__right-container d-flex align-items-center justify-content-center justify-content-sm-end">
-                <span>Follow Us:</span>
-                <ul class="social-icons">
-                    <li><a href="https://www.facebook.com/ElevarDesignGroup/" rel="noopener" target="_blank" title="Facebook" aria-label="Facebook"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a> </li>
-                    <li><a href="https://www.linkedin.com/company/elevardesigngroup/" rel="noopener" target="_blank" title="LinkedIn" aria-label="LinkedIn"><svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg></a> </li>
-                    <li><a href="https://twitter.com/Elevar_Design" rel="noopener" target="_blank" title="Twitter" aria-label="Twitter"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a> </li>
-                    <li><a href="https://www.instagram.com/elevar_design_group/" rel="noopener" target="_blank" title="Instagram" aria-label="Instagram"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a> </li>
-                    <li><a href="https://www.youtube.com/channel/UCIQbhkNvFc4xDbM6hrEYubA" rel="noopener" target="_blank" title="Youtube" aria-label="Youtube"><svg class="icon icon-youtube"><use xlink:href="#icon-youtube"></use></svg></a> </li>
-                    <li><a href="https://issuu.com/elevardesigngroup" rel="noopener" target="_blank" title="Issuu" aria-label="Issuu"><svg class="icon icon-issuu"><use xlink:href="#icon-issuu"></use></svg></a></li>
-                </ul>
-            </div>
+<footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="foot-menu">
+          <ul>
+            <li><a href="#">Бонусная программа</a></li>
+            <li><a href="#">Бонусная программа</a></li>
+            <li><a href="#">Условия возврата</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Публичная оферта</a></li>
+            <li><a href="#">Политика конфидециальности</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Подарочные сертификаты</a></li>
+            <li><a href="#">Cтать партнером</a></li>
+          </ul>
         </div>
+        <div class="foot-info">
+          <div class="foot-info__title"> Контакты</div>
+          <div class="foot-info__phone">8 (343) 344 888 5 | 8 (967) 639 188 5</div>
+          <div class="foot-info__addr">г. Екатеринбург, пр-т Ленина 68 оф. 201</div>
+          <div class="foot-info__mail"><a href="#">mesinfo.ekb@gmail.com</a></div>
+          <div class="foot-info__delivery">Доставка по всей России</div>
+
+        </div>
+      </div><!--end footer-top -->
+      <div class="footer-down">
+        <div class="footer-search">
+          <div class="label">Подписаться на рассылку</div>
+          <div class="search-inp"><input type="text" placeholder="E-mail" class="input">
+            <button class="btn-orange">подписаться</button>
+          </div>
+        </div>
+        <div class="footer-down__right">
+          <ul class="foot-pays">
+            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay1"></use></svg></li>
+            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay2"></use></svg></li>
+            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay3"></use></svg></li>
+            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay4"></use></svg></li>
+            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay5"></use></svg></li>
+            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay6"></use></svg></li>
+            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay7"></use></svg></li>
+            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay8"></use></svg></li>
+            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay9"></use></svg></li>
+          </ul>
+          <div class="foot-socs">
+            <span>Присоединяйтесь</span>
+            <a href="#" class="inst"><svg class="icon icon-inst"><use xlink:href="#icon-inst"></use></svg></a>
+            <a href="#" class="fb"><svg class="icon icon-fb"><use xlink:href="#icon-fb"></use></svg></a>
+          </div>
+          <div class="foot-copy"><%=dataFooter.author%></div>
+        </div>
+      </div><!--end footer-down -->
+
     </div>
 </footer>
-
-<div id="content-arrow" style="display: none;">
-    <span class="bounce arrow active"></span>
-</div>
