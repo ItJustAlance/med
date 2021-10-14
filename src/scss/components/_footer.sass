@@ -1,20 +1,189 @@
 .footer
-  background: linear-gradient(to bottom, #ffffff 33%,#00a3e0 98%)
+  background: linear-gradient(to bottom, #ffffff 1%, #00a3e0 25%)
+  font-size: 14px
+  padding-top: 80px
+  padding-bottom: 70px
+  color: #fff
+  @media(max-width: 350px)
+    font-size: 13px
+  svg
+    max-width: 40px
+    max-height: 50px
   &-top
     display: flex
-  &-menu
+    @media(max-width: 768px)
+      display: block
+  .foot-menu
     font-size: 14px
     font-weight: bold
     width: 50%
     display: flex
+    @media(max-width: 768px)
+      width: 100%
+      display: block
+      padding-bottom: 20px
     ul
       margin: 0
       padding: 0
       list-style: none
       width: calc(50% - 30px)
+      @media(max-width: 500px)
+        width: 100%
       li
         padding: 0 15px 14px
+        @media(max-width: 500px)
+          padding-left: 0
+          padding-right: 0
         a
           color: #fff
           text-decoration: none
+  .foot-info
+    width: 50%
+    padding: 0 15px
+    @media(max-width: 768px)
+      width: 100%
+      padding: 0
+    a
+      color: #fff
+      text-decoration: none
+    &__title
+      font-weight: bold
+      padding-bottom: 15px
+      display: flex
+      align-items: center
+      @media(max-width: 500px)
+        display: none
+      .b-ico
+        width: 50px
+      svg
+        width: 19px
+    &__row
+      margin-bottom: 15px
+      display: flex
+      align-items: center
+      .b-ico
+        width: 30px
+        text-align: center
+        margin-right: 20px
+    &__phone
+      svg
+        width: 19px
+        height: 23px
+    &__addr
+      svg
+        width: 31px
+        height: 25px
+    &__mail
+      svg
+        width: 22px
+        height: 24px
+    &__delivery
+      svg
+        width: 35px
+        height: 24px
+        
+  &-search
+    width: 50%
+    padding: 0 15px
+    @media(max-width: 768px)
+      width: 100%
+      padding: 0
+    .label
+      padding-bottom: 10px
+    .search-inp
+      display: flex
+      .input
+        background: none
+        border: 1px solid #fff
+        height: 45px
+        padding: 5px 5px 0 20px
+        color: #fff
+        font-size: 14px
+        width: 100%
+        &::placeholder
+          color: #fff
+      .inp
+        flex: 1 1 auto
+      .btn
+        height: 45px
+        padding-left: 10px
+        padding-right: 10px
       
+  &-down
+    display: flex
+    padding-top: 40px
+    @media(max-width: 768px)
+      display: block
+      padding-top: 20px
+    &__right
+      width: 50%
+      padding: 35px 15px 0
+      @media(max-width: 768px)
+        width: 100%
+        padding-left: 0
+        padding-right: 0
+    .foot-row
+      display: flex
+      justify-content: space-between
+      align-items: center
+      @media(max-width: 500px)
+        display: block
+        text-align: left;
+    .foot-socs
+      font-weight: 700
+      .icon-inst
+        width: 19px
+        height: 19px
+      .icon-fb
+        width: 11px
+        height: 20px
+      .inst
+        display: inline-block
+        vertical-align: top
+        margin-left: 10px
+      .fb
+        margin-left: 10px
+        display: inline-block
+        vertical-align: top
+    .foot-copy
+      text-align: right
+      @media(max-width: 500px)
+        text-align: left
+        padding-top: 15px
+    .foot-pays
+      margin: 0
+      padding: 0
+      list-style: none
+      li
+        margin-right: 10px
+        display: inline-flex
+        align-items: center
+        margin-bottom: 35px
+        .icon-pay
+          &1
+            width: 35px
+            height: 35px
+          &2
+            width: 38px
+            height: 13px
+          &3
+            width: 28px
+            height: 17px
+          &4
+            width: 47px
+            height: 20px
+          &5
+            width: 44px
+            height: 20px
+          &6
+            width: 16px
+            height: 25px
+          &7
+            width: 20px
+            height: 20px
+          &8
+            width: 27px
+            height: 27px
+          &9
+            width: 21px
+            height: 22px

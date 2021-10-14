@@ -1,0 +1,372 @@
+.main-sliders-top
+  display: flex
+  @media(max-width: 990px)
+    margin-left: -15px
+    margin-right: -15px
+  .slider
+    position: relative
+    .slick-dots
+      text-align: center
+      margin: 0
+      padding: 15px 0
+      list-style: none
+      li
+        display: inline-block
+        overflow: hidden
+        margin: 0 3px
+        &.slick-active
+          button
+            background: #00A3E0
+        button
+          border: 1px solid #00A3E0
+          width: 11px
+          height: 11px
+          text-indent: -999em
+          text-align: left
+          cursor: pointer
+          border-radius: 50%
+          background: none
+
+  &__left
+    width: 50%
+  &__right
+    width: 50%
+  .slide
+    @media(max-width: 500px)
+      height: 400px
+    img
+      display: inline
+      @media(max-width: 500px)
+        object-fit: cover
+        height: 400px
+    &-cont
+      position: relative
+      img.t35
+        position: relative
+        top: 35px
+    &-blue
+      .slide-bottom
+        background: linear-gradient(180deg, rgba(0, 163, 224, 0) 42.5%, #00A3E0 100%)
+    &-orange
+      .slide-bottom
+        background: linear-gradient(179.81deg, rgba(255, 138, 0, 0) 41.53%, #FF8A00 87.23%)
+        .b-btn .btn-link
+          border: 1px solid #000000
+          color: #000
+          .icon
+            fill: #000
+    &-bottom
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      text-align: center
+      padding-bottom: 40px
+      @media(max-width: 767px)
+        padding-bottom: 20px
+      &__icon
+        text-align: center
+        margin-bottom: 20px
+        @media(max-width: 500px)
+          img
+            object-fit: none
+            height: auto
+
+      .b-btn
+        text-align: center
+        position: relative
+        z-index: 1
+        @media(max-width: 767px)
+          padding-left: 5px
+          padding-right: 5px
+        .btn-link
+          border: 1px solid #fff
+          width: 265px
+          text-align: center
+          font-size: 21px
+          text-transform: uppercase
+          display: inline-flex
+          align-items: center
+          justify-content: center
+          vertical-align: top
+          color: #fff
+          padding: 20px
+          @media(max-width: 767px)
+            padding: 6px
+            font-size: 16px
+            width: 100%
+          @media(max-width: 400px)
+            font-size: 14px
+          .icon
+            width: 28px
+            height: 16px
+            fill: #fff
+            margin-left: 10px
+            @media(max-width: 500px)
+              width: 18px
+              height: 10px
+
+.main-two-banners
+  max-width: 1105px
+  margin: 0 auto
+  display: flex
+  justify-content: center
+  width: 100%
+  @media(max-width: 767px)
+    display: block
+  .b-bann
+    margin: 0 0 50px
+    padding: 0 15px
+    width: 50%
+    text-align: center
+    @media(max-width: 767px)
+      width: 100%
+      margin-bottom: 20px
+
+    
+.section-orange
+  position: relative
+  z-index: 1
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: calc(50% - 1000px)
+    width: 2000px
+    height: 100%
+    z-index: -1
+    background: linear-gradient(to bottom, #ffffff 0%,#ff8a00 50%,#ffffff 100%)
+.section-blue
+  position: relative
+  z-index: 1
+  color: #fff
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: calc(50% - 1000px)
+    width: 2000px
+    height: 100%
+    z-index: -1
+    background: linear-gradient(to bottom, #ffffff 0%,#00a3e0 30%,#00a3e0 30%,#00a3e0 70%,#ffffff 100%)
+  
+    
+.category-item
+  display: flex
+  flex-wrap: wrap
+  max-width: 1000px
+  margin: 0 auto
+  padding-bottom: 80px
+  justify-content: center
+  .item
+    width: 33.33%
+    max-width: 275px
+    text-align: center
+    display: inline-flex
+    justify-items: center
+    align-items: flex-end
+    flex-wrap: wrap
+    padding-bottom: 30px
+    @media(max-width: 500px)
+      width: 50%
+      padding-left: 5px
+      padding-right: 5px
+
+    .img
+      margin-bottom: 5px
+      display: flex
+      align-items: flex-end
+      width: 100%
+      justify-content: center
+      @media(max-width: 767px)
+        max-height: 70px
+        img
+          max-height: 65px
+    .title
+      font-size: 21px
+      text-transform: uppercase
+      color: #333
+      width: 100%
+      @media(max-width: 767px)
+        font-size: 15px
+      @media(max-width: 350px)
+        font-size: 14px
+.slider-lider
+  padding-bottom: 40px
+  .slider
+    display: flex
+    .slide
+      width: 25%
+      padding: 0 25px
+      @media(max-width: 1024px)
+        padding: 0 10px
+  .slick-arrow
+    border: none
+    cursor: pointer
+    position: absolute
+    background: url(../img/arr-l2.png) 50% 50% no-repeat
+    width: 31px
+    height: 12px
+    left: -15px
+    top: calc(50% - 6px)
+    overflow: hidden
+    text-align: left
+    text-indent: -999em
+    transform: rotate(-180deg)
+    &:hover
+      background: url(../img/arr-r2.png) 50% 50% no-repeat
+  .slick-next
+    transform: rotate(0deg)
+    left: auto
+    right: -15px
+.lider_item
+  max-width: 275px
+  margin: 0 auto
+  padding: 20px 10px 0
+  border: 1px solid #FF8A00
+  text-align: center
+  a
+    color: #000000
+    text-decoration: none
+  .img
+    height: 220px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 10px
+    img
+      max-height: 100%
+  .title
+    font-size: 21px
+    text-transform: uppercase
+    height: 50px
+    overflow: hidden
+    line-height: 1.2
+    margin-bottom: 5px
+  .desc
+    height: 58px
+    line-height: 1.1
+    overflow: hidden
+    font-size: 18px
+    margin-bottom: 5px
+  .option
+    font-size: 18px
+    color: #000
+    margin-bottom: 10px
+  .bottom-row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 10px
+  .cost
+    max-width: 50%
+    flex: 1 1 auto
+    overflow: hidden
+    font-size: 21px
+    color: #000
+    font-weight: bold
+    text-align: left
+  .raiting
+  .b-buy
+    margin: 0 -10px
+  .btn-buy
+    background: #FF8A00
+    color: #000000
+    text-decoration: none
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    letter-spacing: 0.05em
+    font-size: 16px
+    text-transform: uppercase
+    font-weight: 500
+    padding: 10px 0
+    svg
+      width: 26px
+      height: 22px
+      margin-left: 10px
+  
+.b-about-title
+  padding-top: 30px
+  .line-h1
+    margin-bottom: 0
+    @media(max-width: 990px)
+      margin-bottom: 20px
+  .text
+    margin: 0 auto
+    max-width: 850px
+    width: 100%
+    padding-bottom: 30px
+.section-blue
+  .line-h1
+    color: #fff
+  .category-item .item .title
+    color: #fff
+
+    
+.about-section
+  padding-bottom: 60px
+  margin-bottom: 30px
+  .bottom-btn
+    text-align: center
+    .btn-orange
+      max-width: 600px
+      width: 100%
+      display: inline-block
+
+      
+.slider-brands
+  margin-bottom: 50px
+  @media(max-width: 500px)
+    margin-left: 30px
+    margin-right: 30px
+  .slick-track
+    display: flex
+
+  .slick-slide
+    display: flex
+    float: none
+    height: auto
+    @media(max-width: 500px)
+      display: block
+    &>div
+      display: flex
+
+  .slide
+    display: flex !important
+    align-items: center
+    justify-content: center
+  .slick-arrow
+    border: none
+    cursor: pointer
+    position: absolute
+    background: url(../img/arr-l.png) 50% 50% no-repeat
+    width: 31px
+    height: 12px
+    left: -40px
+    top: calc(50% - 6px)
+    overflow: hidden
+    text-align: left
+    text-indent: -999em
+    &:hover
+      background: url(../img/arr-r.png) 50% 50% no-repeat
+  .slick-next
+    transform: rotate(-180deg)
+    left: auto
+    right: -40px
+    
+.section-consul
+  padding: 80px 0 100px
+  margin-bottom: 70px
+  .consultation-text
+    text-align: center
+    max-width: 830px
+    margin: 0 auto
+    color: #000000
+    padding-bottom: 40px
+  .b-btn-center
+    text-align: center
+    .btn-orange
+      max-width: 610px
+      width: 100%

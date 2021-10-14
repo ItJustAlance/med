@@ -1,12 +1,8 @@
-<% var dataFooter = {
-    author: "© МедЭксперт Сервис 2021"
-}; %>
 <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div class="foot-menu">
           <ul>
-            <li><a href="#">Бонусная программа</a></li>
             <li><a href="#">Бонусная программа</a></li>
             <li><a href="#">Условия возврата</a></li>
             <li><a href="#">Обучение</a></li>
@@ -21,41 +17,55 @@
           </ul>
         </div>
         <div class="foot-info">
-          <div class="foot-info__title"> Контакты</div>
-          <div class="foot-info__phone">8 (343) 344 888 5 | 8 (967) 639 188 5</div>
-          <div class="foot-info__addr">г. Екатеринбург, пр-т Ленина 68 оф. 201</div>
-          <div class="foot-info__mail"><a href="#">mesinfo.ekb@gmail.com</a></div>
-          <div class="foot-info__delivery">Доставка по всей России</div>
-
+          <div class="foot-info__title">
+            <div class="b-ico"><svg class="icon icon-contact"><use xlink:href="#icon-foo1"></use></svg></div> Контакты</div>
+          <div class="foot-info__row foot-info__phone">
+            <div class="b-ico"><svg class="icon icon-contact2"><use xlink:href="#icon-foo2"></use></svg></div>
+            8 (343) 344 888 5 | 8 (967) 639 188 5</div>
+          <div class="foot-info__row foot-info__addr">
+            <div class="b-ico"><svg class="icon icon-contact3"><use xlink:href="#icon-foo3"></use></svg></div>
+            г. Екатеринбург, пр-т Ленина 68 оф. 201</div>
+          <div class="foot-info__row foot-info__mail">
+            <div class="b-ico"><svg class="icon icon-contact4"><use xlink:href="#icon-foo4"></use></svg></div>
+            <a href="#">mesinfo.ekb@gmail.com</a></div>
+          <div class="foot-info__row foot-info__delivery">
+            <div class="b-ico"><svg class="icon icon-contact5"><use xlink:href="#icon-foo5"></use></svg></div>
+            Доставка по всей России</div>
         </div>
       </div><!--end footer-top -->
       <div class="footer-down">
         <div class="footer-search">
           <div class="label">Подписаться на рассылку</div>
-          <div class="search-inp"><input type="text" placeholder="E-mail" class="input">
-            <button class="btn-orange">подписаться</button>
+          <div class="search-inp">
+            <div class="b-inp"><input type="text" placeholder="E-mail" class="input"></div>
+            <button class="btn btn-orange">подписаться</button>
           </div>
         </div>
         <div class="footer-down__right">
           <ul class="foot-pays">
-            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay1"></use></svg></li>
-            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay2"></use></svg></li>
-            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay3"></use></svg></li>
-            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay4"></use></svg></li>
-            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay5"></use></svg></li>
-            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay6"></use></svg></li>
-            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay7"></use></svg></li>
-            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay8"></use></svg></li>
-            <li><svg class="icon icon-pay"><use xlink:href="#icon-pay9"></use></svg></li>
+            <li><svg class="icon icon-pay1"><use xlink:href="#icon-pay1"></use></svg></li>
+            <li><svg class="icon icon-pay2"><use xlink:href="#icon-pay2"></use></svg></li>
+            <li><svg class="icon icon-pay3"><use xlink:href="#icon-pay3"></use></svg></li>
+            <li><svg class="icon icon-pay4"><use xlink:href="#icon-pay4"></use></svg></li>
+            <li><svg class="icon icon-pay5"><use xlink:href="#icon-pay5"></use></svg></li>
+            <li><svg class="icon icon-pay6"><use xlink:href="#icon-pay6"></use></svg></li>
+            <li><svg class="icon icon-pay7"><use xlink:href="#icon-pay7"></use></svg></li>
+            <li><svg class="icon icon-pay8"><use xlink:href="#icon-pay8"></use></svg></li>
+            <li><svg class="icon icon-pay9"><use xlink:href="#icon-pay9"></use></svg></li>
           </ul>
-          <div class="foot-socs">
-            <span>Присоединяйтесь</span>
-            <a href="#" class="inst"><svg class="icon icon-inst"><use xlink:href="#icon-inst"></use></svg></a>
-            <a href="#" class="fb"><svg class="icon icon-fb"><use xlink:href="#icon-fb"></use></svg></a>
+          <div class="foot-row">
+            <div class="foot-socs">
+              <span>Присоединяйтесь</span>
+              <a href="#" class="inst"><svg class="icon icon-inst"><use xlink:href="#icon-inst"></use></svg></a>
+              <a href="#" class="fb"><svg class="icon icon-fb"><use xlink:href="#icon-fb"></use></svg></a>
+            </div>
+            <div class="foot-copy">© МедЭксперт Сервис 2021</div>
           </div>
-          <div class="foot-copy"><%=dataFooter.author%></div>
         </div>
       </div><!--end footer-down -->
 
     </div>
 </footer>
+
+
+</div><!--end over -->

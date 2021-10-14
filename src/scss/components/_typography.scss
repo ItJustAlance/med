@@ -48,7 +48,30 @@ h5, .h5 {
     margin-top: 0;
 }
 
-
+.line-h1 {
+  margin: 0 0 60px;
+  padding: 0 10px 0 0;
+  border-left: 10px solid #00A3E0;
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  font-size: 42px;
+  letter-spacing: 0.02em;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media(max-width: 990px) {
+    font-size: 22px;
+    border-left-width: 5px;
+    min-height: 40px;
+  }
+  &--orange {
+    border-color: #FF8A00
+  }
+}
 
 strong, b {
     font-weight: 700;
