@@ -1,5 +1,4 @@
 .header
-  overflow: hidden
   position: relative
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.12)
   background: #fff
@@ -15,6 +14,7 @@
       text-decoration: none
   .container
     padding-top: 30px
+    position: relative
     @media(max-width: 990px)
       padding-top: 10px
   &-top
@@ -90,6 +90,7 @@
     display: flex
     justify-content: flex-end
  
+    
 .nav
   margin: 0
   padding: 0
@@ -102,6 +103,20 @@
     height: 12px
     position: relative
     top: 3px
+    fill: #00A3E0
+  .arr
+    display: block
+    position: absolute
+    top: 3px
+    right: 0
+    width: 10px
+    height: 10px
+    cursor: pointer
+  .link-sub1
+    background: url(../img/link-sub1.png) 50% 50% no-repeat
+  .link-sub2
+    background: url(../img/link-sub2.png) 50% 50% no-repeat
+  
   ul
     margin: 0
     padding: 0
@@ -114,16 +129,175 @@
     padding-left: 12px
     letter-spacing: 0.1em
     font-size: 14px
+    position: relative
     text-transform: uppercase
     @media(max-width: 1024px)
       letter-spacing: 0.02em
     .lnk-menu-prof
       color: #00A3E0
+      position: relative
     .lnk-menu-prod
+      position: relative
       color: #FF8A00
+    &.nav-parent
+      position: relative
+      padding-right: 13px
     a
       color: #000
       text-decoration: none
       display: inline-block
       vertical-align: top
       padding-bottom: 7px
+
+.mobile-menu-wrapper
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  bottom: 0
+  z-index: 101
+  background: rgba(0,0,0, .5)
+  display: none
+  &.active
+    display: block
+    .mobile-menu
+      left: 0
+
+@keyframes slidein
+  from
+    left: -105vw
+  to
+    left: 0
+.mobile-menu
+  background: #ffffff
+  position: absolute
+  top: 0
+  left: -105vw
+  bottom: 0
+  overflow: auto
+  width: 90%
+  max-width: 340px
+  animation: 1s 1 alternate slidein
+  transition: all 0.3s ease
+
+
+
+
+  &__title
+    letter-spacing: 0.15em
+    color: #000
+    font-size: 14px
+    font-weight: bold
+    padding: 10px 18px
+    border-bottom: 1px solid #000
+  .menu-close
+    position: absolute
+    top: 10px
+    right: 10px
+  .menu-list
+    margin: 0
+    padding: 0
+    list-style: none
+    font-size: 14px
+    .icon-lock
+      fill: #fff
+      width: 8px
+      height: 10px
+      position: relative
+      top: 3px
+      margin-left: 5px
+    li
+      margin: 0
+      list-style: none
+      padding: 12px 20px 12px 18px
+      text-transform: uppercase
+      position: relative
+      ul
+        padding-top: 6px
+        display: none
+      li
+        padding-top: 6px
+        padding-bottom: 6px
+        text-transform: none
+        li
+          a
+            color: #585858
+      a
+        display: inline-block
+        vertical-align: top
+        color: #000000
+        text-decoration: none
+    .menu-blue
+      background: #00A3E0
+      padding-top: 16px
+      padding-bottom: 16px
+      &> .arr
+        top: 22px
+      .arr
+        background: url(../img/arr-white.png) 0 0 no-repeat
+      a
+        color: #fff
+    .menu-orange
+      background: #FF8A00
+      padding-top: 16px
+      padding-bottom: 16px
+      &> .arr
+        top: 22px
+  .arr
+    background: url(../img/menu-arr.png) 0 0 no-repeat
+    width: 10px
+    height: 10px
+    display: block
+    position: absolute
+    top: 11px
+    right: 10px
+  .mobile-links
+    padding: 12px 18px 0
+    margin: 0
+    list-style: none
+    font-size: 14px
+    li
+      letter-spacing: 0.2em
+      text-transform: uppercase
+      padding: 7px 0
+      .icc
+        min-width: 36px
+        max-width: 36px
+        display: inline-flex
+      a
+        color: #000000
+        text-decoration: none
+        display: inline-flex
+        align-items: center
+
+        
+.submenu
+  max-width: 50%
+  width: 50%
+  position: absolute
+  top: 100%
+  left: 0
+  z-index: 10
+  padding-top: 50px
+  height: 720px
+  display: none
+  &-close
+    position: absolute
+    top: 20px
+    right: 20px
+    cursor: pointer
+  .category-item
+    padding-bottom: 20px
+    .item
+      width: 50%
+      .title
+        font-size: 18px
+        padding-top: 10px
+  &.sub1
+    background: linear-gradient(180deg, #00A3E0 0%, #FFFFFF 100%)
+    
+  &.sub2
+    background: linear-gradient(180deg, #FF8A00 59.17%, #FFFFFF 100%)
+    left: auto
+    right: 0
+    

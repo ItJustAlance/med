@@ -9,6 +9,24 @@ $(function() {
     let win_w = $(document).width();
 
     console.log('srcipt.js')
+    $(".hamburger-open").on("click",function(){
+        $(".mobile-menu-wrapper").addClass('active')
+    })
+    $(".menu-close").on("click",function(){
+        $(".mobile-menu-wrapper").removeClass('active')
+    })
+    $(".menu-list .arr").on("click",function(){
+        $(this).next('ul').slideToggle()
+    })
+    $(".submenu .submenu-close").on("click",function(){
+        $(".submenu").fadeOut()
+    })
+    $(".link-sub1").on("click",function(){
+        $(".submenu.sub1").fadeIn()
+    })
+    $(".link-sub2").on("click",function(){
+        $(".submenu.sub2").fadeIn()
+    })
     $(".main-sliders-top .slider").slick({
         dots: true,
         infinite: true,
