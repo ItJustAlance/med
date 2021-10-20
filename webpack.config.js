@@ -39,7 +39,7 @@ const config = {
     optimization: {
         minimizer: [
             new TerserPlugin({
-                sourceMap: false,
+                sourceMap: true,
                 extractComments: false
             })
         ]
@@ -66,13 +66,14 @@ const config = {
                         options: {
                             ident: "postcss",
                             sourceMap: true,
-                            plugins: () => [
+                             plugins: () => [
                                 require("cssnano")({
                                     preset: [
                                         "default",
                                         {
                                             discardComments: {
-                                                removeAll: true
+                                                removeAll: true,
+                                                sourceMap: true,
                                             }
                                         }
                                     ]
