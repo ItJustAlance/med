@@ -1,8 +1,32 @@
 a[class*="btn"] {
     text-decoration: none;
 }
+input {
+  font-family: $font-primary;
+}
+input.input {
+  font-size: 16px;
+  color: #000;
+  padding: 13px;
+  border: 1px solid #000;
+}
+textarea.input {
+  font-size: 16px;
+  color: #000;
+  padding: 13px;
+  height: 150px;
+  border: 1px solid #000;
+}
+input.input-search-addr {
+  background: url(../img/ico-search.svg) 20px 50% no-repeat;
+  padding-left: 50px;
+}
 
 .btn{
+  &--100 {
+    width: 100%;
+  }
+
   &-orange {
     font-size: 16px;
     font-weight: 500;
@@ -22,8 +46,88 @@ a[class*="btn"] {
       background: #00A3E0;
       border: 1px solid #00A3E0;
       color: #fff;
-
     }
   }
+}
+.b-check {
+  label{
+    cursor: pointer;
+    color: #000;
+    position: relative;
+    padding-left: 20px;
+    font-size: 14px;
+    display: block;
+    input {
+      opacity: 0;
+      z-index: -1;
+      position: absolute;
+      &:checked+span {
+        &:before {
+          background: #000 url(../img/check-white.svg) 50% 50% no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+    span {
+      &:before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border: 1px solid #000;
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 0;
+      }
+    }
+  }
+}
 
+.b-radio {
+  &.orange {
+    label span:before {
+      border-color: #FF8A00
+    }
+    label span:after {
+      background: #FF8A00 !important;
+    }
+  }
+  label{
+    cursor: pointer;
+    color: #000;
+    position: relative;
+    padding-left: 25px;
+    font-size: 14px;
+    display: block;
+    input {
+      opacity: 0;
+      z-index: -1;
+      position: absolute;
+      &:checked+span {
+        &:after {
+          content: "";
+          background: #000;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          position: absolute;
+          top: 6px;
+          left: 4px;
+        }
+      }
+    }
+    span {
+      &:before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 0;
+      }
+    }
+  }
 }

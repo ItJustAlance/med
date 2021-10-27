@@ -1,4 +1,6 @@
 @import '~slick-carousel/slick/slick';
+@import '~jquery-ui/themes/base/all.css';
+@import '~swiper/css/swiper.min.css';
 
 @import "layout/fonts";
 @import "layout/variables";
@@ -6,8 +8,13 @@
 @import "components/typography";
 @import "components/header";
 @import "components/footer";
-@import "pages/index";
 
 @import "layout/layout";
 
-
+@import "pages/index";
+@import "pages/catalog";
+@import "pages/cart";
+@import "pages/lk";
+@import "pages/bonus";
+@import "pages/contact";
+@import "pages/delivery";

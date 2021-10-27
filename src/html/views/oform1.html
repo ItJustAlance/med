@@ -1,0 +1,212 @@
+<% var classes = {
+  bodyClass: "home-page"
+}; %>
+
+<%= _.template(require('./../includes/header.html').default)(classes) %>
+<div class="icon-sprite" style="position: absolute; width: 0; height: 0;" aria-hidden="true"><%= compilation.assets['spritemap.svg'].source() %></div>
+
+<section class="main">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="">Главная</a></li>
+      <li><a href="">Каталог</a></li>
+    </ul>
+    <div class="content-wrapper">
+      <div class="content">
+
+        <h2 class="line-h1 line-h1--blue">оформление заказа</h2>
+        <div class="order-wrapper">
+          <div class="ordering-form">
+            <div class="ordering-form__group">
+              <div class="ordering-form__title">Персональные данные</div>
+              <div class="ordering-form__row">
+                <input type="text" placeholder="Имя" class="input">
+              </div>
+              <div class="ordering-form__row">
+                <input type="text" placeholder="Фамилия" class="input">
+              </div>
+              <div class="ordering-form__row">
+                <input type="text" class="input phone_mask">
+              </div>
+              <div class="ordering-form__row">
+                <input type="text" class="input">
+              </div>
+              <div class="ordering-form__row">
+                <input type="text" class="input">
+              </div>
+            </div><!--end ordering-form__group -->
+            <div class="ordering-form__group order-delivery">
+              <div class="ordering-form__title">Варианты оплаты</div>
+              <ul class="list-delivery">
+                <li>
+                  <div class="b-radio">
+                    <label>
+                      <input type="radio" name="rr1">
+                      <span>Банковской картой на сайте</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-radio">
+                    <label>
+                      <input type="radio" name="rr1">
+                      <span>Оплата курьеру банковской картой</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-radio">
+                    <label>
+                      <input type="radio" name="rr1">
+                      <span>Оплата курьеру наличными</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-radio">
+                    <label>
+                      <input type="radio" name="rr1">
+                      <span>Оплата qr кодом</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- /.ordering-form__group order-delivery -->
+            <div class="ordering-form__group">
+              <div class="ordering-form__title">Адрес доставки</div>
+              <div class="ordering-form__row">
+                <input type="text" placeholder="Москва, Россия" class="input input-search-addr">
+              </div>
+              <div class="ordering-form__row">
+                <input type="text" placeholder="Улица" class="input">
+              </div>
+              <div class="ordering-form__row row-child">
+                <div class="ordering-form__house">
+                  <input type="text" placeholder="Дом" class="input">
+                </div>
+                <div class="ordering-form__office">
+                  <input type="text" placeholder="Квартира /офис" class="input">
+                </div>
+              </div>
+              <div class="ordering-form__row">
+                <input type="text" class="input">
+              </div>
+              <div class="ordering-form__row">
+                <input type="text" class="input">
+              </div>
+            </div><!--end ordering-form__group -->
+            <div class="ordering-form__group">
+              <div class="ordering-form__title">Комментарий</div>
+              <div class="ordering-form__row">
+                <textarea type="text" class="input"></textarea>
+              </div>
+
+            </div><!--end ordering-form__group -->
+
+            <div class="ordering-form__group order-delivery">
+              <div class="ordering-form__title">выбор доставки</div>
+              <ul class="list-delivery">
+                <li>
+                  <div class="b-radio">
+                    <label>
+                      <input type="radio" name="rr1">
+                      <span>Доставка курьером</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-radio">
+                    <label>
+                      <input type="radio" name="rr1">
+                      <span>Самовывоз</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-radio">
+                    <label>
+                      <input type="radio" name="rr1">
+                      <span>Доставка транспортными компаниями</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- /.ordering-form__group order-delivery -->
+          </div><!--end ordering-form -->
+          <div class="cart-info">
+            <div class="b-cart-options">
+              <div class="b-cart-options__row">
+                <div class="label">Количество</div>
+                <div class="val">1 шт</div>
+              </div>
+              <div class="b-cart-options__row">
+                <div class="label">Стоимость без скидки</div>
+                <div class="val">3 864 ₽</div>
+              </div>
+              <div class="b-cart-options__row">
+                <div class="label">Выгода</div>
+                <div class="val">0 ₽</div>
+              </div>
+              <div class="b-cart-options__row">
+                <div class="label">Стоимость со скидкой</div>
+                <div class="val">0 ₽</div>
+              </div>
+              <div class="b-cart-options__row">
+                <div class="label">Доставка</div>
+                <div class="val">0 ₽</div>
+              </div>
+              <div class="b-cart-options__row">
+                <div class="label">Бонусов доступно</div>
+                <div class="val">0 ₽</div>
+              </div>
+              <div class="b-cart-options__row">
+                <div class="label">
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>Использовать бонусы</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="val">0 ₽</div>
+              </div>
+            </div><!--end b-cart-options -->
+            <div class="b-cart-itogo">
+              <div class="b-cart-itogo__row">
+                <div class="label">Итого</div>
+                <div class="val">3 864 ₽</div>
+              </div>
+              <div class="b-btn">
+                <button class="btn-orange btn--100">оформить заказ</button>
+              </div>
+              <div class="itogo-checkers">
+                <div class="itogo-checkers__row">
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>Раньше всех получать скидки и подарки</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="itogo-checkers__row">
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>Принимаю условия обработки персональных данных</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div><!--end b-cart-itogo -->
+          </div>
+        </div>
+
+      </div><!--end content -->
+    </div><!--end content-wrapper -->
+  </div><!--end container -->
+</section><!--end content -->
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
+
+<%= _.template(require('./../includes/end-of-page.html').default)() %>

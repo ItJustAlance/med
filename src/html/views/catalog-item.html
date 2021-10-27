@@ -1,0 +1,219 @@
+<% var classes = {
+  bodyClass: "home-page"
+}; %>
+
+<%= _.template(require('./../includes/header.html').default)(classes) %>
+<div class="icon-sprite" style="position: absolute; width: 0; height: 0;" aria-hidden="true"><%= compilation.assets['spritemap.svg'].source() %></div>
+
+<section class="main">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="">Главная</a></li>
+      <li><a href="">Каталог</a></li>
+    </ul>
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="card-item">
+          <div class="card-item__left">
+            <div class="card-item-info-text">
+              <div class="title">Equilibrium Crema Mani</div>
+              <div class="desc">Crema mani idratante
+                a rapido assorbimento</div>
+
+              <div class="bottom-row">
+                <div class="cost">3 864 ₽</div>
+                <div class="raiting">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+                <div class="b-number">
+                  <div class="plus"><svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg></div>
+                  <input class="num" type="text">
+                  <div class="minus"><svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg></div>
+
+                </div>
+              </div>
+              <div class="options">
+                <div class="articul">Артикул: 931102010</div>
+                <div class="volume">Объем 150 мл</div>
+              </div>
+              <div class="b-buy"><a href="#" class="btn-buy">в корзину <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></a></div>
+            </div><!--end card-item-info-text -->
+          </div><!-- /.card-item__left -->
+          <div class="card-item__right">
+
+            <div class="slider-card-item b-item__slider">
+              <div class="swiper-container gallery-top js-gallery-top">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/slide.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/slide12.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/slide.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/slide12.png" alt=""></div>
+                </div>
+              </div>
+              <div class="swiper-container gallery-thumbs">
+                <!-- .swiper-button-next-->
+                <div class="b-item__slider__btn-next"><svg class="icon icon-arr-up"><use xlink:href="#icon-arr-up"></use></svg></div>
+                <div class="b-item__slider__btn-prev"><svg class="icon icon-arr-up"><use xlink:href="#icon-arr-up"></use></svg></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/slide.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/slide12.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/slide.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/slide12.png" alt=""></div>
+                </div><!-- .swiper-button-prev-->
+              </div>
+            </div>
+
+          </div><!-- /.card-item__right -->
+        </div><!-- /.card-item -->
+        <div class="specifications">
+          <div class="specific-item">
+            <div class="specific-item__title">
+              <span>ОПИСАНИЕ</span>
+            </div><!-- /.specific-item__title -->
+            <div class="specific-item__body">
+              <p>Термо-Очищение с Детокс Эффектом глубоко и бережно очищает кожу, раскрывая поры и растворяя даже глубокие загрязнения. Результат - чистая кожа с мелкими порами, защищённая от экзогенного и оксидативного стресса.</p>
+              <p>Термо-Очищение с Детокс Эффектом глубоко и бережно очищает кожу, раскрывая поры и растворяя даже глубокие загрязнения. Результат - чистая кожа с мелкими порами, защищённая от экзогенного и оксидативного стресса.</p>
+            </div><!-- /.specific-item__body -->
+          </div><!-- /.specific-item -->
+          <div class="specific-item">
+            <div class="specific-item__title">
+              <span>Основные показания</span>
+            </div><!-- /.specific-item__title -->
+            <div class="specific-item__body">
+              <p>Термо-Очищение с Детокс Эффектом глубоко и бережно очищает кожу, раскрывая поры и растворяя даже глубокие загрязнения. Результат - чистая кожа с мелкими порами, защищённая от экзогенного и оксидативного стресса.</p>
+              <p>Термо-Очищение с Детокс Эффектом глубоко и бережно очищает кожу, раскрывая поры и растворяя даже глубокие загрязнения. Результат - чистая кожа с мелкими порами, защищённая от экзогенного и оксидативного стресса.</p>
+            </div><!-- /.specific-item__body -->
+          </div><!-- /.specific-item -->
+          <div class="specific-item">
+            <div class="specific-item__title">
+              <span>Активные компоненты</span>
+            </div><!-- /.specific-item__title -->
+            <div class="specific-item__body">
+              <p>Термо-Очищение с Детокс Эффектом глубоко и бережно очищает кожу, раскрывая поры и растворяя даже глубокие загрязнения. Результат - чистая кожа с мелкими порами, защищённая от экзогенного и оксидативного стресса.</p>
+              <p>Термо-Очищение с Детокс Эффектом глубоко и бережно очищает кожу, раскрывая поры и растворяя даже глубокие загрязнения. Результат - чистая кожа с мелкими порами, защищённая от экзогенного и оксидативного стресса.</p>
+            </div><!-- /.specific-item__body -->
+          </div><!-- /.specific-item -->
+          <div class="specific-item">
+            <div class="specific-item__title">
+              <span>Эффект</span>
+            </div><!-- /.specific-item__title -->
+            <div class="specific-item__body">
+
+            </div><!-- /.specific-item__body -->
+          </div><!-- /.specific-item -->
+          <div class="specific-item">
+            <div class="specific-item__title">
+              <span>Способ применения</span>
+            </div><!-- /.specific-item__title -->
+            <div class="specific-item__body">
+
+            </div><!-- /.specific-item__body -->
+          </div><!-- /.specific-item -->
+          <div class="specific-item">
+            <div class="specific-item__title">
+              <span>СОСТАВ</span>
+            </div><!-- /.specific-item__title -->
+            <div class="specific-item__body">
+
+            </div><!-- /.specific-item__body -->
+          </div><!-- /.specific-item -->
+
+        </div><!--end specifications -->
+        <h2 class="line-h1 line-h1--orange">рекомендуемые товары</h2>
+        <div class="slider-lider">
+          <div class="slider">
+            <div class="slide">
+              <div class="lider_item">
+                <div class="img"><a href="#"><img src="img/item.png" alt=""></a></div>
+                <div class="title"><a href="#">Equilibrium Crema Mani</a></div>
+                <div class="desc"><a href="#">Crema mani idratante
+                  a rapido assorbimento</a></div>
+                <div class="option">TUBO 50 ML</div>
+                <div class="bottom-row">
+                  <div class="cost">3 864 ₽</div>
+                  <div class="raiting">
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  </div>
+                </div>
+                <div class="b-buy"><a href="#" class="btn-buy">в корзину <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></a></div>
+              </div><!--end item -->
+            </div><!--end slide -->
+            <div class="slide">
+              <div class="lider_item">
+                <div class="img"><a href="#"><img src="img/item.png" alt=""></a></div>
+                <div class="title"><a href="#">Equilibrium Crema Mani</a></div>
+                <div class="desc"><a href="#">Crema mani idratante
+                  a rapido assorbimento</a></div>
+                <div class="option">TUBO 50 ML</div>
+                <div class="bottom-row">
+                  <div class="cost">3 864 ₽</div>
+                  <div class="raiting">
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  </div>
+                </div>
+                <div class="b-buy"><a href="#" class="btn-buy">в корзину <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></a></div>
+              </div><!--end item -->
+            </div><!--end slide -->
+            <div class="slide">
+              <div class="lider_item">
+                <div class="img"><a href="#"><img src="img/item.png" alt=""></a></div>
+                <div class="title"><a href="#">Equilibrium Crema Mani</a></div>
+                <div class="desc"><a href="#">Crema mani idratante
+                  a rapido assorbimento</a></div>
+                <div class="option">TUBO 50 ML</div>
+                <div class="bottom-row">
+                  <div class="cost">3 864 ₽</div>
+                  <div class="raiting">
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  </div>
+                </div>
+                <div class="b-buy"><a href="#" class="btn-buy">в корзину <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></a></div>
+              </div><!--end item -->
+            </div><!--end slide -->
+            <div class="slide">
+              <div class="lider_item">
+                <div class="img"><a href="#"><img src="img/item.png" alt=""></a></div>
+                <div class="title"><a href="#">Equilibrium Crema Mani</a></div>
+                <div class="desc"><a href="#">Crema mani idratante
+                  a rapido assorbimento</a></div>
+                <div class="option">TUBO 50 ML</div>
+                <div class="bottom-row">
+                  <div class="cost">3 864 ₽</div>
+                  <div class="raiting">
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                    <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  </div>
+                </div>
+                <div class="b-buy"><a href="#" class="btn-buy">в корзину <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></a></div>
+              </div><!--end item -->
+            </div><!--end slide -->
+          </div>
+        </div>
+      </div><!--end content -->
+    </div><!--end content-wrapper -->
+  </div><!--end container -->
+</section><!--end content -->
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
+
+<%= _.template(require('./../includes/end-of-page.html').default)() %>

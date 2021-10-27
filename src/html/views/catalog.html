@@ -1,0 +1,474 @@
+<% var classes = {
+  bodyClass: "home-page"
+}; %>
+
+<%= _.template(require('./../includes/header.html').default)(classes) %>
+<div class="icon-sprite" style="position: absolute; width: 0; height: 0;" aria-hidden="true"><%= compilation.assets['spritemap.svg'].source() %></div>
+
+<section class="main">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="">Главная</a></li>
+      <li><a href="">Каталог</a></li>
+    </ul>
+    <div class="content-wrapper">
+      <aside class="left-column">
+        <div class="column-filters">
+          <div class="filter-box">
+            <div class="filter-box__title">КАТЕГОРИИ</div>
+            <!-- /.filter-box__title -->
+            <div class="filter-box__body">
+              <ul class="check-list">
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>Очищение и увлажнение</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>Кремы</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>Сыворотки</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>Маски</span>
+                    </label>
+                  </div>
+                </li>
+              </ul><!--end check-list -->
+            </div>
+            <!-- /.filter-box__body -->
+          </div>
+          <!-- /.filter-box -->
+          <div class="filter-box">
+            <div class="filter-box__title">Бренды</div>
+            <!-- /.filter-box__title -->
+            <div class="filter-box__body">
+              <ul class="check-list">
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>Очищение и увлажнение</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>teoxane</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>vagheggi</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>Hyon</span>
+                    </label>
+                  </div>
+                </li>
+              </ul><!--end check-list -->
+            </div>
+            <!-- /.filter-box__body -->
+          </div>
+          <!-- /.filter-box -->
+          <div class="filter-box">
+            <div class="filter-box__title">проблема</div>
+            <!-- /.filter-box__title -->
+            <div class="filter-box__body">
+              <ul class="check-list">
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>Постпроцедурный уход</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>Антивозрастной уход</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>Питание и Увлажнение</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>Сияние и энергия</span>
+                    </label>
+                  </div>
+                </li>
+              </ul><!--end check-list -->
+            </div>
+            <!-- /.filter-box__body -->
+          </div>
+          <!-- /.filter-box -->
+          <div class="filter-box">
+            <div class="filter-box__title">объем</div>
+            <!-- /.filter-box__title -->
+            <div class="filter-box__body">
+              <ul class="check-list">
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>1 мл</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>1,5 мл</span>
+                    </label>
+                  </div>
+                  <ul>
+                    <li>
+                      <div class="b-check">
+                        <label>
+                          <input type="checkbox">
+                          <span>1 мл</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="b-check">
+                        <label>
+                          <input type="checkbox">
+                          <span>новая область мл</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="b-check">
+                        <label>
+                          <input type="checkbox">
+                          <span>222 мл</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="b-check">
+                        <label>
+                          <input type="checkbox">
+                          <span>400 мл</span>
+                        </label>
+                      </div>
+                    </li>
+                  </ul><!--end check-list -->
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>10 мл</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>400 мл</span>
+                    </label>
+                  </div>
+                </li>
+              </ul><!--end check-list -->
+            </div>
+            <!-- /.filter-box__body -->
+          </div>
+          <!-- /.filter-box -->
+          <div class="filter-box">
+            <div class="filter-box__title">упаковка</div>
+            <!-- /.filter-box__title -->
+            <div class="filter-box__body">
+              <ul class="check-list">
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>1 ампула</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>1 фл</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>2 шприца</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-check">
+                    <label>
+                      <input type="checkbox">
+                      <span>3 шприца</span>
+                    </label>
+                  </div>
+                </li>
+              </ul><!--end check-list -->
+            </div>
+            <!-- /.filter-box__body -->
+          </div>
+          <!-- /.filter-box -->
+          <div class="filter-box">
+            <div class="filter-box__title">Новинка</div>
+            <!-- /.filter-box__title -->
+            <div class="filter-box__body"></div>
+            <!-- /.filter-box__body -->
+          </div>
+          <!-- /.filter-box -->
+          <div class="filter-box">
+            <div class="filter-box__title">Лидер продаж </div>
+            <!-- /.filter-box__title -->
+            <div class="filter-box__body"></div>
+            <!-- /.filter-box__body -->
+          </div>
+          <!-- /.filter-box -->
+          <div class="filter-box">
+            <div class="filter-box__title">Специальное предложение</div>
+            <!-- /.filter-box__title -->
+            <div class="filter-box__body"></div>
+            <!-- /.filter-box__body -->
+          </div>
+          <!-- /.filter-box -->
+          <div class="filter-box">
+            <div class="filter-box__title">Цена продажи</div>
+            <!-- /.filter-box__title -->
+            <div class="filter-box__body">
+              <div class="b-slider-cost">
+                <div class="cost-slider__values">
+                  <input type="text" class="inp1">
+                  <input type="text" class="inp2">
+                </div>
+                <div id="cost-slider"></div>
+              </div>
+            </div>
+            <!-- /.filter-box__body -->
+          </div>
+          <!-- /.filter-box -->
+          <div class="filter-bottom">
+            <button class="btn-orange btn--100">показать</button>
+            <button class="btn-clear">Сбросить</button>
+          </div>
+        </div><!-- /.column-filters -->
+      </aside>
+      <div class="content">
+        <div class="catalog-filters">
+          <div class="cat-filter">
+            <a href="">
+              <img src="img/cat-fav.svg" alt="">
+              <span class="sort sort-up"></span>
+            </a>
+          </div>
+          <div class="cat-filter">
+            <a href="">
+              <img src="img/cat-name.svg" alt="">
+              <span class="sort sort-up"></span>
+            </a>
+          </div>
+          <div class="cat-filter">
+            <a href="">
+              <img src="img/cat-cost.svg" alt="">
+              <span class="sort sort-down"></span>
+            </a>
+          </div>
+        </div>
+        <div class="catalog-list">
+          <div class="item">
+            <div class="lider_item">
+              <div class="img"><a href="#"><img src="img/item.png" alt=""></a></div>
+              <div class="title title--3"><a href="#">TEOSYAL®
+                PURESENSE REDENSITY 1</a></div>
+              <div class="desc"><a href="#">Предназначен для предотвращения образования морщин</a></div>
+              <div class="bottom-row">
+                <div class="cost">3 864 ₽</div>
+                <div class="raiting">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+              </div>
+              <div class="small-text">* цена до регистрации на сайте</div>
+              <div class="b-buy"><a href="#" class="btn-buy">Узнать цену</a></div>
+            </div><!--end lider_item -->
+          </div><!--end item -->
+          <div class="item">
+            <div class="lider_item">
+              <div class="img"><a href="#"><img src="img/item.png" alt=""></a></div>
+              <div class="title"><a href="#">Equilibrium Crema Mani</a></div>
+              <div class="desc"><a href="#">Crema mani idratante
+                a rapido assorbimento</a></div>
+              <div class="option">TUBO 50 ML</div>
+              <div class="bottom-row">
+                <div class="cost">3 864 ₽</div>
+                <div class="raiting">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+              </div>
+              <div class="b-buy"><a href="#" class="btn-buy">в корзину <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></a></div>
+            </div><!--end lider_item -->
+          </div><!--end item -->
+          <div class="item">
+            <div class="lider_item">
+              <div class="img"><a href="#"><img src="img/item.png" alt=""></a></div>
+              <div class="title"><a href="#">Equilibrium Crema Mani</a></div>
+              <div class="desc"><a href="#">Crema mani idratante
+                a rapido assorbimento</a></div>
+              <div class="option">TUBO 50 ML</div>
+              <div class="bottom-row">
+                <div class="cost">3 864 ₽</div>
+                <div class="raiting">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+              </div>
+              <div class="b-buy"><a href="#" class="btn-buy">в корзину <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></a></div>
+            </div><!--end lider_item -->
+          </div><!--end item -->
+          <div class="item">
+            <div class="lider_item">
+              <div class="img"><a href="#"><img src="img/item.png" alt=""></a></div>
+              <div class="title"><a href="#">Equilibrium Crema Mani</a></div>
+              <div class="desc"><a href="#">Crema mani idratante
+                a rapido assorbimento</a></div>
+              <div class="option">TUBO 50 ML</div>
+              <div class="bottom-row">
+                <div class="cost">3 864 ₽</div>
+                <div class="raiting">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+              </div>
+              <div class="b-buy"><a href="#" class="btn-buy">в корзину <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></a></div>
+            </div><!--end lider_item -->
+          </div><!--end item -->
+          <div class="item">
+            <div class="lider_item">
+              <div class="img"><a href="#"><img src="img/item.png" alt=""></a></div>
+              <div class="title"><a href="#">Equilibrium Crema Mani</a></div>
+              <div class="desc"><a href="#">Crema mani idratante
+                a rapido assorbimento</a></div>
+              <div class="option">TUBO 50 ML</div>
+              <div class="bottom-row">
+                <div class="cost">3 864 ₽</div>
+                <div class="raiting">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+              </div>
+              <div class="b-buy"><a href="#" class="btn-buy">в корзину <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></a></div>
+            </div><!--end lider_item -->
+          </div><!--end item -->
+          <div class="item">
+            <div class="lider_item">
+              <div class="img"><a href="#"><img src="img/item.png" alt=""></a></div>
+              <div class="title"><a href="#">Equilibrium Crema Mani</a></div>
+              <div class="desc"><a href="#">Crema mani idratante
+                a rapido assorbimento</a></div>
+              <div class="option">TUBO 50 ML</div>
+              <div class="bottom-row">
+                <div class="cost">3 864 ₽</div>
+                <div class="raiting">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+              </div>
+              <div class="b-buy"><a href="#" class="btn-buy">в корзину <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></a></div>
+            </div><!--end lider_item -->
+          </div><!--end item -->
+          <div class="item">
+            <div class="lider_item">
+              <div class="img"><a href="#"><img src="img/item.png" alt=""></a></div>
+              <div class="title"><a href="#">Equilibrium Crema Mani</a></div>
+              <div class="desc"><a href="#">Crema mani idratante
+                a rapido assorbimento</a></div>
+              <div class="option">TUBO 50 ML</div>
+              <div class="bottom-row">
+                <div class="cost">3 864 ₽</div>
+                <div class="raiting">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                </div>
+              </div>
+              <div class="b-buy"><a href="#" class="btn-buy">в корзину <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></a></div>
+            </div><!--end lider_item -->
+          </div><!--end item -->
+        </div><!--end catalog-list -->
+      </div><!--end content -->
+    </div><!--end content-wrapper -->
+  </div><!--end container -->
+</section><!--end content -->
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
+
+<%= _.template(require('./../includes/end-of-page.html').default)() %>

@@ -1,0 +1,94 @@
+<% var classes = {
+  bodyClass: "home-page"
+}; %>
+
+<%= _.template(require('./../includes/header.html').default)(classes) %>
+<div class="icon-sprite" style="position: absolute; width: 0; height: 0;" aria-hidden="true"><%= compilation.assets['spritemap.svg'].source() %></div>
+
+<section class="main">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="">Главная</a></li>
+      <li><a href="">Каталог</a></li>
+    </ul>
+    <div class="content-wrapper">
+      <div class="content">
+
+        <h2 class="line-h1 line-h1--orange">личный кабинет</h2>
+        <div class="lk-wrapper">
+          <div class="lk-menu">
+            <ul>
+              <li><a href="">Корзина</a></li>
+              <li><a href="">отложенные</a></li>
+              <li><a href="">История заказов</a></li>
+              <li><a href="">вы просматривали</a></li>
+              <li><a href="">Ваши бонусы</a></li>
+            </ul>
+          </div><!-- /.lk-menu -->
+          <div class="lk-content">
+            <div class="h-title">Персональные данные</div>
+            <div class="personal-form">
+              <div class="personal-form__row">
+                <input placeholder="Имя" type="text" class="input">
+              </div>
+              <div class="personal-form__row">
+                <input placeholder="Отчество" type="text" class="input">
+              </div>
+              <div class="personal-form__row">
+                <input placeholder="Фамилия" type="text" class="input">
+              </div>
+              <ul class="list-gender">
+                <li>
+                  <div class="b-radio orange">
+                    <label>
+                      <input type="radio" name="rr1">
+                      <span>Мужской</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-radio orange">
+                    <label>
+                      <input type="radio" name="rr1">
+                      <span>Женский</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-radio orange">
+                    <label>
+                      <input type="radio" name="rr1">
+                      <span>Не указан</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+              <div class="personal-form__row">
+                <input placeholder="дд\мм\гг" type="text" class="input">
+              </div>
+              <div class="personal-form__row">
+                <input placeholder="E-Mail" type="text" class="input">
+              </div>
+              <div class="personal-form__row">
+                <input type="text" class="input phone_mask">
+              </div>
+              <div class="personal-form__row">
+                <input placeholder="Город" type="text" class="input input-search-addr">
+              </div>
+            </div><!--end personal-form -->
+            <div class="h-title">мои документы</div>
+            <ul class="list-docs">
+              <li><a href=""><span class="ico"><img src="img/pdf.svg" alt=""></span><span class="name">Диплом Иванова.pfd</span></a></li>
+              <li><a href=""><span class="ico"><img src="img/pdf.svg" alt=""></span><span class="name">Диплом Иванова.pfd</span></a></li>
+            </ul>
+          </div><!-- /.lk-content -->
+        </div><!-- /.lk-wrapper -->
+      </div><!--end content -->
+    </div><!--end content-wrapper -->
+  </div><!--end container -->
+</section><!--end content -->
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
+
+<%= _.template(require('./../includes/end-of-page.html').default)() %>

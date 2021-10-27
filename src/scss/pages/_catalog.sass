@@ -1,0 +1,311 @@
+.left-column
+  min-width: 310px
+  max-width: 310px
+.column-filters
+  .filter-bottom
+    .btn-orange
+      margin-bottom: 15px
+    .btn-clear
+      width: 100%
+      text-align: center
+      font-size: 14px
+      margin-bottom: 15px
+      border: none
+      background: none
+      color: #000
+      cursor: pointer
+.filter-box
+  padding-bottom: 20px
+  &__title
+    padding-bottom: 11px
+    font-size: 14px
+    letter-spacing: 0.12em
+    text-transform: uppercase
+    font-weight: bold
+    color: #000
+  &__body
+    ul.check-list
+      margin: 0
+      padding: 0
+      list-style: none
+      li
+        padding-bottom: 3px
+        ul
+          margin: 0
+          padding: 0 0 0 20px
+          list-style: none
+
+        
+.b-slider-cost
+  .cost-slider__values
+    display: flex
+    justify-content: space-between
+    margin-bottom: 15px
+    input
+      width: calc(50% - 10px)
+      border: 0.5px solid #78859D
+      color: #333
+      padding: 6px
+  .ui-widget.ui-widget-content
+    border: none
+    background: #ded5cc
+  .ui-slider-horizontal
+    height: 2px
+    border: 2px solid #FF8A00
+  .ui-slider .ui-slider-handle
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    border: none
+    background: #FF8A00
+  .ui-widget-header
+    background: #FF8A00
+    
+.catalog-filters
+  padding-bottom: 25px
+  .cat-filter
+    display: inline-block
+    vertical-align: top
+    padding-right: 15px
+    position: relative
+    margin-right: 15px
+    .sort
+      background: url(../img/sort-up.svg) 50% 50% no-repeat
+      display: block
+      width: 8px
+      height: 8px
+      position: absolute
+      top: 1px
+      right: 0
+  .btn-orange
+    margin-bottom: 15px
+  
+.catalog-list
+  display: flex
+  margin: 0 -15px
+  flex-wrap: wrap
+  .item
+    width: 33.333%
+    padding: 0 15px 30px
+
+.specifications
+  padding-bottom: 100px
+  .specific-item
+    border-top: 1px solid #000
+    color: #000
+    &.active
+      .specific-item__title
+        span:before
+          transform: rotate(180deg)
+      .specific-item__body
+        display: block
+    &__title
+      font-size: 21px
+      letter-spacing: 0.05em
+      padding: 15px
+      text-transform: uppercase
+      cursor: pointer
+      span
+        display: inline-block
+        vertical-align: top
+        position: relative
+        width: 100%
+        max-width: 420px
+        padding-right: 25px
+        
+        &:before
+          content: ""
+          background: url(../img/sort-up.svg) 50% 50% no-repeat
+          background-size: contain
+          display: block
+          width: 12px
+          height: 12px
+          position: absolute
+          top: 7px
+          right: 0
+          transform: rotate(90deg)
+    &__body
+      font-size: 18px
+      padding-bottom: 15px
+      padding-left: 50px
+      display: none
+      p
+        margin: 0
+        padding: 0 0 15px
+.b-number
+  position: relative
+  display: flex
+  max-width: 120px
+  margin: 0 auto
+  border: 1px solid  #FF8A00
+  &__label
+    text-align: center
+    font-size: 16px
+  svg
+    width: 12px
+    height: 12px
+  .plus
+    min-width: 36px
+    max-width: 36px
+    height: 36px
+    background: #FF8A00
+    display: flex
+    align-items: center
+    justify-content: center
+  .minus
+    min-width: 36px
+    max-width: 36px
+    height: 36px
+    background: #FF8A00
+    display: flex
+    align-items: center
+    justify-content: center
+  input.num
+    width: 100%
+    text-align: center
+    border: none
+    height: 36px
+.card-item
+  display: flex
+  margin: 0 -20px
+  justify-content: space-between
+  &-info-text
+    max-width: 440px
+  &__left
+    max-width: 50%
+    min-width: 50%
+    padding: 0 20px 80px
+    color: #000000
+    text-align: center
+    .title
+      font-size: 36px
+      text-transform: uppercase
+      line-height: 1.2
+      margin-bottom: 15px
+    .small-text
+      text-align: center
+      font-size: 14px
+    .desc
+      line-height: 1.2
+      font-size: 21px
+      margin-bottom: 15px
+    .b-number
+      margin-bottom: 25px
+    .options
+      font-size: 16px
+      color: #000
+      margin-bottom: 10px
+      display: flex
+      justify-content: space-between
+      .articul
+        margin-bottom: 10px
+      .volume
+        margin-bottom: 10px
+    .bottom-row
+      text-align: center
+      margin-bottom: 0
+    .cost
+      font-size: 24px
+      color: #000
+      font-weight: bold
+      margin-bottom: 15px
+    .raiting
+      text-align: center
+      margin-bottom: 35px
+    .btn-buy
+      background: #FF8A00
+      color: #000000
+      text-decoration: none
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      letter-spacing: 0.05em
+      font-size: 16px
+      text-transform: uppercase
+      font-weight: 500
+      padding: 14px 0
+      &:hover
+        background: #00A3E0
+        color: #fff
+        svg
+          fill: #fff
+      svg
+        width: 26px
+        height: 22px
+        margin-left: 10px
+  &__right
+    max-width: 50%
+    min-width: 50%
+    padding: 0 20px 80px
+.b-item
+  background: #fff
+  padding: 30px 0
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 30px
+  &__slider
+    display: flex
+    width: 100%
+    order: 0
+    &__btn-prev
+      position: absolute
+      top: -5px
+      left: 0
+      width: 100%
+      text-align: center
+      background: #fff
+      z-index: 2
+      cursor: pointer
+      padding: 6px 0 4px
+      svg
+        fill: #ff8a00
+        
+    &__btn-next
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      text-align: center
+      background: #fff
+      z-index: 2
+      cursor: pointer
+      padding: 6px 0
+      svg
+        fill: #ff8a00
+        transform: rotate(-180deg)
+    .gallery-top
+      width: 378px
+      flex: 1 1 378px
+      max-height: 378px
+      .swiper-slide
+        max-height: 378px
+        max-width: 378px
+        display: flex
+        align-items: center
+        justify-content: center
+    
+    .gallery-thumbs
+      margin-right: 18px
+      min-width: 160px
+      max-width: 160px
+      max-height: 378px
+      position: relative
+      padding-top: 25px
+      padding-bottom: 25px
+      .swiper-slide
+        min-width: 160px
+        max-width: 160px
+        min-height: 160px
+        max-height: 160px
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        img
+          max-height: 100%
+    .card__slider-img
+      position: relative
+      
+      img
+        max-height: 250px

@@ -233,9 +233,11 @@
 .lider_item
   max-width: 275px
   margin: 0 auto
-  padding: 20px 10px 0
+  padding: 20px 10px 65px
+  position: relative
   border: 1px solid #FF8A00
   text-align: center
+  min-height: 522px
   a
     color: #000000
     text-decoration: none
@@ -256,12 +258,17 @@
     overflow: hidden
     line-height: 1.2
     margin-bottom: 5px
+    &--3
+      height: 75px
+  .small-text
+    text-align: center
+    font-size: 14px
   .desc
-    height: 58px
+    height: 60px
     line-height: 1.1
     overflow: hidden
     font-size: 18px
-    margin-bottom: 5px
+    margin-bottom: 10px
   .option
     font-size: 18px
     color: #000
@@ -271,7 +278,7 @@
     display: flex
     justify-content: space-between
     align-items: center
-    margin-bottom: 25px
+    margin-bottom: 0
   .cost
     max-width: 50%
     flex: 1 1 auto
@@ -280,9 +287,11 @@
     color: #000
     font-weight: bold
     text-align: left
-  .raiting
   .b-buy
-    margin: 0 -10px
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
   .btn-buy
     background: #FF8A00
     color: #000000

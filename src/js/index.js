@@ -1,14 +1,67 @@
 import $ from 'jquery';
+
+import 'slick-carousel';
+import 'jquery-ui';
+import 'jquery-ui/ui/widgets/slider';
+// import Swiper JS
+import Swiper from 'swiper';
+
+import Inputmask from "inputmask";
+
 window.jQuery = $;
 window.$ = $;
-import 'slick-carousel';
-//import popper from "popper.js";
-//import bootstrap from "bootstrap";
+window.Swiper = Swiper;
+
+// import Swiper styles
+
+
+let im = new Inputmask({"mask": "+7 (999) 999-9999", "placeholder": "_"});
+im.mask(".phone_mask");
+// import popper from "popper.js";
+// import bootstrap from "bootstrap";
 
 $(function() {
     let win_w = $(document).width();
 
-    console.log('srcipt.js')
+    let galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        loop:false,
+        direction: 'vertical',
+        watchSlidesProgress: true,
+        // mousewheel: true,
+    });
+    let galleryTop = new Swiper('.js-gallery-top', {
+        spaceBetween: 10,
+        loop:false,
+        navigation: {
+            nextEl: '.b-item__slider__btn-next',
+            prevEl: '.b-item__slider__btn-prev',
+        },
+        // loopedSlides: 5, //looped slides should be the same
+        thumbs: {
+            swiper: galleryThumbs,
+        },
+    });
+
+
+
+    $( "#cost-slider" ).slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [ 75, 300 ],
+        slide: function( event, ui ) {
+            $( ".cost-slider__values .inp1" ).val( ui.values[ 0 ] );
+            $( ".cost-slider__values .inp2" ).val( ui.values[ 1 ] );
+        }
+    });
+
+
+    $(".specific-item__title").on("click",function(){
+        $(this).parent().toggleClass('active')
+    })
     $(".hamburger-open").on("click",function(){
         $(".mobile-menu-wrapper").addClass('active')
     })
@@ -101,4 +154,6 @@ $(function() {
             ]
         });
     }
+
+
 });

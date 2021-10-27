@@ -29,3 +29,37 @@ body {
   max-width: 1223px;
   padding: 0 15px;
 }
+
+.breadcrumbs {
+  color: #6F6F6F;
+  margin: 0;
+  padding: 35px 0 30px;
+  list-style: none;
+  font-size: 14px;
+  a {
+    color: #6F6F6F;
+    text-decoration: none;
+  }
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+  }
+  li + li {
+    &:before {
+      content: "/";
+      margin-right: 10px;
+    }
+
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  .left-column {
+    margin-right: 30px;
+  }
+  .content {
+    flex: 1 1 auto
+  }
+}
