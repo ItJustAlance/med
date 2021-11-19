@@ -1,0 +1,48 @@
+<% var classes = {
+  bodyClass: "home-page"
+}; %>
+
+<%= _.template(require('./../includes/header.html').default)(classes) %>
+<div class="icon-sprite" style="position: absolute; width: 0; height: 0;" aria-hidden="true"><%= compilation.assets['spritemap.svg'].source() %></div>
+
+<section class="main">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="">Главная</a></li>
+      <li><a href="">Каталог</a></li>
+    </ul>
+    <div class="content-wrapper">
+      <div class="content">
+        <h2 class="line-h1 line-h1--orange">подарочные сертификаты</h2>
+        <div class="certificate-text">
+          Какой-то текст. Статьи и видео о красоте и косметике, новости бьюти-индустрии, секреты красоты, обзоры средств Какой-то текст. Статьи и видео о красоте и косметике, новости бьюти-индустрии, секреты красоты, обзоры средств
+        </div>
+        <div class="certificates-cards">
+          <a href="#" class="cert-card">
+            <div class="img"><svg class="icon icon-cert-logo"><use xlink:href="#icon-cert-logo"></use></svg></div>
+            <div class="text">
+              <div class="title">Сертификат</div>
+              <strong>на 15 000 ₽</strong>
+            </div>
+          </a>
+          <a href="#" class="cert-card cert-card--blue">
+            <div class="img"><svg class="icon icon-cert-logo"><use xlink:href="#icon-cert-logo"></use></svg></div>
+            <div class="text">
+              <div class="title">Сертификат</div>
+              <strong>на 20 000 ₽</strong>
+            </div>
+          </a>
+        </div>
+
+
+
+
+      </div><!--end content -->
+    </div><!--end content-wrapper -->
+  </div><!--end container -->
+</section><!--end content -->
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
+
+<%= _.template(require('./../includes/end-of-page.html').default)() %>

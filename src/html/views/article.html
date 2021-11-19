@@ -1,0 +1,88 @@
+<% var classes = {
+  bodyClass: "home-page"
+}; %>
+
+<%= _.template(require('./../includes/header.html').default)(classes) %>
+<div class="icon-sprite" style="position: absolute; width: 0; height: 0;" aria-hidden="true"><%= compilation.assets['spritemap.svg'].source() %></div>
+
+<section class="main">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="">Главная</a></li>
+      <li><a href="">Каталог</a></li>
+    </ul>
+    <div class="content-wrapper">
+      <div class="content">
+        <h2 class="line-h1 line-h1--blue">Психология общения с клиентом</h2>
+        <article class="article article--bl">
+          <div class="article-sidebar">
+            <div class="status">Онлайн</div>
+            <div class="date">11.08.2021</div>
+          </div>
+          <div class="article-info">
+            <div class="article-info__img"><img src="img/article.png" alt=""></div>
+            <div class="article-info__text">
+              <p><strong>Медицинское образование:</strong> Высшее и среднее <br>
+              <strong>Преподаватели:</strong><br>
+                <strong>Лектор:</strong> Козлитина Елена Сергеевна врач дерматовенеролог, косметолог, трихолог<br>
+                  <strong>Адрес проведения:</strong> Онлайн
+              </p>
+              <p>Комплексный подход к восстановлению кожи после сезона инсоляции. Механизмы фотостарения. Виды ультрафиолетового излучения. Степени фотостарения. Шкала Глогау. Выбор методов терапии в зависимости от выраженности негативных изменений и возраста пациента.</p>
+
+            </div>
+          </div>
+          <div class="article-text">
+          <h4>ОПИСАНИЕ:</h4>
+          <p><strong>ТЕОРИЯ</strong><br>
+          Комплексный подход к восстановлению кожи после сезона инсоляции.<br>
+          Механизмы фотостарения. Виды ультрафиолетового излучения.<br>
+          Степени фотостарения. Шкала Глогау.<br>
+          Выбор методов терапии в зависимости от выраженности негативных изменений и возраста пациента.<br>
+          Гиалуроновая кислота. Монопрепараты и коктейли на ее основе.<br>
+          Пигментация. Типы кожи по Фицпатрику. Эндогенные и экзогенные факторы развития гиперпигментации.<br>
+          Таргетная коррекция гиперпигментации. От пилингов до пептидных комплексов. Какие кислоты возможно применять круглый год?<br>
+            Фотозащита.</p>
+
+          <p><strong>МАСТЕР-КЛАСС</strong><br>
+          Устранение пигментации - мезотерапия<br>
+            Таргетная коррекция гиперпигментации с помощью препарата F-Melaclear</p>
+
+          <p><strong>УСЛОВИЯ УЧАСТИЯ:</strong><br>
+            Наличие диплома о высшем или среднем мед. образовании + сертификат косметолога.</p>
+          </div><!--end article-text -->
+        </article>
+
+        <div class="bonus-content">
+          <div class="h-title">Записаться на мероприятие</div>
+          <div class="personal-form">
+            <div class="personal-form__row">
+              <input placeholder="ФИО*" type="text" class="input">
+            </div>
+            <div class="personal-form__row">
+              <input placeholder="Фамилия"  type="text" class="input phone_mask">
+            </div>
+            <div class="personal-form__row">
+              <input placeholder="E-Mail*" type="text" class="input">
+            </div>
+
+            <div class="personal-form__row">
+              <button class="btn-orange btn--100">отправить заявку</button>
+            </div>
+            <div class="personal-form__row">
+              <div class="personal-text-center">
+                Нажимая на кнопку "Отправить" вы даёте своё соглашение на обработку персональных данных в соответствии с Пользовательским соглашением
+              </div>
+            </div>
+          </div><!--end personal-form -->
+        </div>
+
+
+      </div><!--end content -->
+    </div><!--end content-wrapper -->
+  </div><!--end container -->
+</section><!--end content -->
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
+
+<%= _.template(require('./../includes/end-of-page.html').default)() %>

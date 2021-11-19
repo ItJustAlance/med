@@ -26,14 +26,66 @@
                 <input type="text" placeholder="Фамилия" class="input">
               </div>
               <div class="ordering-form__row">
-                <input type="text" class="input phone_mask">
+                <input type="text" placeholder="+7 (___) ___-__-_" class="input phone_mask">
               </div>
               <div class="ordering-form__row">
-                <input type="text" class="input">
+                <input type="text" placeholder="Email" class="input">
+              </div>
+            </div><!--end ordering-form__group -->
+            <div class="ordering-form__group order-delivery">
+              <div class="ordering-form__title">выбор доставки</div>
+              <ul class="list-delivery">
+                <li>
+                  <div class="b-radio">
+                    <label>
+                      <input type="radio" name="rr1">
+                      <span>Доставка курьером</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-radio">
+                    <label>
+                      <input type="radio" name="rr1">
+                      <span>Самовывоз</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="b-radio">
+                    <label>
+                      <input type="radio" name="rr1">
+                      <span>Доставка транспортными компаниями</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- /.ordering-form__group order-delivery -->
+
+            <div class="ordering-form__group">
+              <div class="ordering-form__title">Адрес доставки</div>
+              <div class="ordering-form__row">
+                <input type="text" placeholder="Москва, Россия" class="input input-search-addr">
               </div>
               <div class="ordering-form__row">
-                <input type="text" class="input">
+                <input type="text" placeholder="Улица" class="input">
               </div>
+              <div class="ordering-form__row row-child">
+                <div class="ordering-form__house">
+                  <input type="text" placeholder="Дом" class="input">
+                </div>
+                <div class="ordering-form__office">
+                  <input type="text" placeholder="Квартира /офис" class="input">
+                </div>
+              </div>
+
+            </div><!--end ordering-form__group -->
+            <div class="ordering-form__group">
+              <div class="ordering-form__title">Комментарий</div>
+              <div class="ordering-form__row">
+                <textarea type="text" class="input"></textarea>
+              </div>
+
             </div><!--end ordering-form__group -->
             <div class="ordering-form__group order-delivery">
               <div class="ordering-form__title">Варианты оплаты</div>
@@ -72,68 +124,9 @@
                 </li>
               </ul>
             </div><!-- /.ordering-form__group order-delivery -->
-            <div class="ordering-form__group">
-              <div class="ordering-form__title">Адрес доставки</div>
-              <div class="ordering-form__row">
-                <input type="text" placeholder="Москва, Россия" class="input input-search-addr">
-              </div>
-              <div class="ordering-form__row">
-                <input type="text" placeholder="Улица" class="input">
-              </div>
-              <div class="ordering-form__row row-child">
-                <div class="ordering-form__house">
-                  <input type="text" placeholder="Дом" class="input">
-                </div>
-                <div class="ordering-form__office">
-                  <input type="text" placeholder="Квартира /офис" class="input">
-                </div>
-              </div>
-              <div class="ordering-form__row">
-                <input type="text" class="input">
-              </div>
-              <div class="ordering-form__row">
-                <input type="text" class="input">
-              </div>
-            </div><!--end ordering-form__group -->
-            <div class="ordering-form__group">
-              <div class="ordering-form__title">Комментарий</div>
-              <div class="ordering-form__row">
-                <textarea type="text" class="input"></textarea>
-              </div>
 
-            </div><!--end ordering-form__group -->
-
-            <div class="ordering-form__group order-delivery">
-              <div class="ordering-form__title">выбор доставки</div>
-              <ul class="list-delivery">
-                <li>
-                  <div class="b-radio">
-                    <label>
-                      <input type="radio" name="rr1">
-                      <span>Доставка курьером</span>
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="b-radio">
-                    <label>
-                      <input type="radio" name="rr1">
-                      <span>Самовывоз</span>
-                    </label>
-                  </div>
-                </li>
-                <li>
-                  <div class="b-radio">
-                    <label>
-                      <input type="radio" name="rr1">
-                      <span>Доставка транспортными компаниями</span>
-                    </label>
-                  </div>
-                </li>
-              </ul>
-            </div><!-- /.ordering-form__group order-delivery -->
           </div><!--end ordering-form -->
-          <div class="cart-info">
+          <div class="cart-info cart-info--top55">
             <div class="b-cart-options">
               <div class="b-cart-options__row">
                 <div class="label">Количество</div>

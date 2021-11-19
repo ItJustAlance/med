@@ -1,0 +1,74 @@
+<% var classes = {
+bodyClass: "home-page"
+}; %>
+
+<%= _.template(require('./../includes/header.html').default)(classes) %>
+<div class="icon-sprite" style="position: absolute; width: 0; height: 0;" aria-hidden="true"><%= compilation.assets['spritemap.svg'].source() %></div>
+
+<section class="main">
+  <div class="container">
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="reg-tabs reg-tabs--selected">
+          <div class="item-reg reg2">
+            <div class="icon"><img class="market" src="img/market.svg" alt=""></div>
+            <div class="b-btn">
+              <a href="#" class="btn-link">
+                магазин
+                <svg class="icon icon-arr-r"><use xlink:href="#icon-arr-r"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="registration-wrapper">
+          <div class="form-registration">
+            <div class="h-title">Зарегистрироваться</div>
+            <div class="form-row">
+              <input type="text" placeholder="Имя*" class="input">
+            </div>
+            <div class="form-row">
+              <input type="text" placeholder="Отчество*" class="input">
+            </div>
+            <div class="form-row">
+              <input type="text" placeholder="Фамилия*" class="input">
+            </div>
+            <div class="form-row">
+              <input type="text" placeholder="+7 (___) ___-__-_" class="input phone_mask">
+            </div>
+            <div class="form-row">
+              <input type="text" placeholder="E-Mail" class="input">
+            </div>
+            <div class="form-row">
+              <input type="text" placeholder="Город" class="input">
+            </div>
+            <div class="itogo-checkers">
+              <div class="itogo-checkers__row">
+                <div class="b-check">
+                  <label>
+                    <input type="checkbox">
+                    <span>Я даю согласие на обработку персональных данных</span>
+                  </label>
+                </div>
+              </div>
+              <div class="itogo-checkers__row">
+                <div class="b-check">
+                  <label>
+                    <input type="checkbox">
+                    <span><a href="#">Договор оферты</a></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="b-btn-reg"><a href="#" class="btn-orange">продолжить</a></div>
+          </div><!--end form-registration -->
+        </div>
+
+      </div><!--end content -->
+    </div><!--end content-wrapper -->
+  </div><!--end container -->
+</section><!--end content -->
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
+
+<%= _.template(require('./../includes/end-of-page.html').default)() %>

@@ -1,0 +1,35 @@
+<% var classes = {
+  bodyClass: "home-page"
+}; %>
+
+<%= _.template(require('./../includes/header.html').default)(classes) %>
+<div class="icon-sprite" style="position: absolute; width: 0; height: 0;" aria-hidden="true"><%= compilation.assets['spritemap.svg'].source() %></div>
+
+<section class="main">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="">Главная</a></li>
+      <li><a href="">Каталог</a></li>
+    </ul>
+    <div class="content-wrapper">
+      <div class="content">
+        <h2 class="line-h1 line-h1--blue">акции</h2>
+        <div class="stock-wrapper">
+          <div class="list-stock">
+            <div class="stock-item"><a href="#"><img src="img/akcia1.png" alt=""></a></div>
+            <div class="stock-item"><a href="#"><img src="img/akcia2.png" alt=""></a></div>
+            <div class="stock-item stock-item--full"><a href="#"><img src="img/akcia3.png" alt=""></a></div>
+            <div class="stock-item"><a href="#"><img src="img/akcia1.png" alt=""></a></div>
+            <div class="stock-item"><a href="#"><img src="img/akcia2.png" alt=""></a></div>
+          </div><!--end list-akcii -->
+        </div>
+
+      </div><!--end content -->
+    </div><!--end content-wrapper -->
+  </div><!--end container -->
+</section><!--end content -->
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
+
+<%= _.template(require('./../includes/end-of-page.html').default)() %>

@@ -14,10 +14,6 @@ $(function(){
                     autoplay: true,
                     autoplaySpeed: 5000
         });
-
-
-
-
         closeMenu: function(){
             $('.main-nav li a').click(function(){
                 $('body').removeClass('is-menu-open');

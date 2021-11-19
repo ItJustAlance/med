@@ -53,13 +53,26 @@ body {
 
   }
 }
+.over {
+  overflow: hidden;
 
+}
 .content-wrapper {
   display: flex;
+
   .left-column {
     margin-right: 30px;
   }
   .content {
-    flex: 1 1 auto
+    flex: 1 1 auto;
+
+  }
+  @media(max-width: 950px) {
+    flex-wrap: wrap;
+    .left-column {
+      margin-right: 0;
+      width: 100%;
+      padding-bottom: 20px;
+    }
   }
 }

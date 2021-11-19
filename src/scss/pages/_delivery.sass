@@ -1,29 +1,47 @@
 .delivery-row-icon
-  background: url(../img/delivery.svg) 0 0 no-repeat
+  background: url(../img/delivery.png) 0 50% no-repeat
+  background-size: 130px auto
   padding: 0 0 0 220px
   min-height: 130px
   font-size: 18px
   color: #000
   max-width: 1040px
   margin: 0 auto 30px
+  @media(max-width: 767px)
+    padding: 100px 0 20px
+    background-size: 80px auto
+    background-position: 50% 0
+    font-size: 16px
 
 .payment-row-icon
-  background: url(../img/oplata.svg) 0 50px no-repeat
+  background: url(../img/oplata.png) 0 50% no-repeat
+  background-size: 105px auto
   padding: 0 0 0 220px
   min-height: 130px
   font-size: 18px
   color: #000
   max-width: 1040px
   margin: 0 auto 30px
+  @media(max-width: 767px)
+    padding: 100px 0 0
+    background-size: 70px auto
+    background-position: 50% 0
+    font-size: 16px
 
 .bonus-row-icon
-  background: url(../img/bonus-program.svg) 50px 0 no-repeat
+  background: url(../img/bonus-program.png) 50px 0 no-repeat
+  background-size: 126px auto
   padding: 0 0 0 270px
   min-height: 130px
   font-size: 18px
   color: #000
   max-width: 1040px
   margin: 0 auto 30px
+  @media(max-width: 767px)
+    padding: 0 0 100px
+    background-size: 80px auto
+    background-position: 50% 100%
+    font-size: 16px
 
 
 .payment-card-center
@@ -32,6 +50,9 @@
     display: inline-block
     vertical-align: middle
     margin: 20px 25px
+    @media(max-width: 600px)
+      display: block
+      text-align: center
 
 .bonus-content
   margin: 0 auto
@@ -41,7 +62,206 @@
     color: #000000
     padding-bottom: 15px
     text-transform: uppercase
+    @media(max-width: 767px)
+      font-size: 16px
   .small-text
     padding-top: 10px
     color: #828282
     font-size: 14px
+    @media(max-width: 767px)
+      text-align: center
+
+    
+.article
+  @media(max-width: 768px)
+    font-size: 14px
+  &--bl
+    border-bottom: 1px solid #000000
+    margin-bottom: 50px
+    padding-bottom: 30px
+  h4
+    font-weight: bold
+    font-size: 18px
+    margin: 0
+    padding: 10px 0
+    @media(max-width: 1024px)
+      font-size: 14px
+  h3
+    font-weight: bold
+    font-size: 21px
+    margin: 0
+    padding: 10px 0
+    @media(max-width: 1024px)
+      font-size: 18px
+  &-sidebar
+    display: flex
+    color: #746F6F
+    font-size: 16px
+    padding-bottom: 20px
+    @media(max-width: 767px)
+      display: none
+    .status
+      margin-right: 30px
+      padding-bottom: 10px
+    .date
+      padding-bottom: 10px
+  &-text
+    strong
+      font-weight: 500
+  &-info
+    display: flex
+    border-bottom: 0.5px solid #000000
+    padding-bottom: 20px
+    margin-bottom: 30px
+    @media(max-width: 767px)
+      flex-wrap: wrap
+    &__img
+      max-width: 280px
+      min-width: 280px
+      margin-right: 50px
+      display: flex
+      align-items: center
+      justify-content: center
+      @media(max-width: 1024px)
+        max-width: 200px
+        min-width: 200px
+        margin-right: 20px
+      @media(max-width: 767px)
+        max-width: 100%
+        min-width: 100%
+        order: 0
+        margin-right: 0
+        text-align: center
+        padding-bottom: 20px
+        img
+          max-width: 200px
+    &__text
+      flex: 1 1 auto
+      font-size: 21px
+      @media(max-width: 1024px)
+        font-size: 16px
+      @media(max-width: 767px)
+        order: 1
+      strong
+        font-weight: 500
+
+        
+        
+        
+        
+.certificate-text
+  max-width: 830px
+  margin: 0 auto
+  padding-bottom: 50px
+  
+.certificates-cards
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  .cert-card
+    color: #FFFFFF
+    text-align: center
+    letter-spacing: 0.02em
+    border-radius: 17px
+    background: #FF8A00
+    display: block
+    text-decoration: none
+    padding: 30px 20px 20px
+    width: 100%
+    max-width: 505px
+    margin: 0 25px 50px
+    min-width: 280px
+    @media(max-width: 767px)
+      max-width: 300px
+    &--blue
+      background: #00A3E0
+    .img
+      padding-bottom: 50px
+      @media(max-width: 767px)
+        padding-bottom: 20px
+      .icon-cert-logo
+        width: 190px
+        height: 78px
+        fill: #fff
+        @media(max-width: 767px)
+          width: 120px
+          height: 50px
+    .text
+      font-size: 30px
+      @media(max-width: 767px)
+        font-size: 21px
+    .title
+      text-transform: uppercase
+      
+.stock-wrapper
+  max-width: 1050px
+  margin: 0 auto
+.list-stock
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -30px
+  text-align: center
+  @media(max-width: 768px)
+    margin: 0 -15px
+  .stock-item
+    width: 50%
+    padding: 0 30px 60px
+    @media(max-width: 768px)
+      padding: 0 15px 30px
+    @media(max-width: 450px)
+      width: 100%
+    &:hover
+      opacity: .8
+    &--full
+      width: 100%
+
+      
+.brands-list
+  position: relative
+  z-index: 1
+  max-width: 1050px
+  margin: 0 auto 30px
+  border-bottom: 1px solid #000
+  &:after
+    width: 2000px
+    height: 100%
+    position: absolute
+    top: 0
+    left: calc(50% - 1000px)
+    content: ""
+    z-index: -1
+    background: linear-gradient(180deg, #FFFFFF 0%, #FF8A00 12%, #fff 18%, #00A3E0 23.7%, #FFF7EE 36.23%, #FF8A00 44.87%, #FF900D 49.61%, #FFFFFF 54.77%, #FFFFFF 60.77%, #00A3E0 69.93%, #00A3E0 75.51%, #FFFFFF 82.46%, #FFFFFF 87.31%, #FF8A00 94.26%, #FFFFFF 100%)
+
+  .brand-item
+    max-width: 1050px
+    margin: 0 auto
+    display: flex
+    padding: 40px 0
+    & + .brand-item
+      border-top: 1px solid #000
+    @media(max-width: 767px)
+      flex-wrap: wrap
+    &__img
+      flex: 0 0 300px
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 20px
+      @media(max-width: 768px)
+        flex: 0 0 200px
+      @media(max-width: 767px)
+        flex: 0 0 auto
+        width: 100%
+        text-align: center
+        margin-right: 0
+        margin-bottom: 20px
+        img
+          max-width: 250px
+    &__text
+      font-size: 21px
+      color: #000
+      @media(max-width: 768px)
+        font-size: 16px
+      @media(max-width: 767px)
+        width: 100%
+      

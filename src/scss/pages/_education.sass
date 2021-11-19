@@ -1,0 +1,133 @@
+.b-tabs
+  &.tab-reg
+    ul.tabs
+      li
+        padding-top: 16px
+        color: #000
+        font-size: 21px
+        text-transform: uppercase
+        @media(max-width: 768px)
+          font-size: 16px
+        &.current
+          color: #000
+  ul.tabs
+    margin: 0 0 55px
+    padding: 0
+    list-style: none
+    display: flex
+    border-bottom: 9px solid #00A3E0
+    @media(max-width: 768px)
+      margin-bottom: 20px
+    li
+      width: 50%
+      text-align: center
+      color: #00A3E0
+      border-radius: 5px 5px 0 0
+      padding: 5px 10px
+      cursor: pointer
+      &.current
+        color: #fff
+        background: #00A3E0
+  .box
+    display: none
+    &.visible
+      display: block
+
+      
+.list-education
+  max-width: 900px
+  margin: 0 auto
+.education-item
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1)
+  border: 0.5px solid #FF8A00
+  padding: 20px 20px 30px
+  display: flex
+  margin-bottom: 50px
+  color: #000
+  @media(max-width: 1024px)
+    font-size: 16px
+  @media(max-width: 767px)
+    flex-wrap: wrap
+    text-align: center
+    padding-bottom: 0
+  &__img
+    flex: 0 0 275px
+    margin-right: 50px
+    padding-top: 20px
+    @media(max-width: 1024px)
+      flex: 0 0 200px
+      margin-right: 25px
+      padding-top: 10px
+    @media(max-width: 767px)
+      flex: 1 1 auto
+      width: 100%
+      margin-right: 0
+      text-align: center
+      img
+        max-width: 200px
+  &__right
+    flex: 1 1 auto
+    @media(max-width: 767px)
+      width: 100%
+  &__top
+    padding-bottom: 40px
+    @media(max-width: 767px)
+      font-size: 14px
+      padding-bottom: 20px
+    .status
+      display: inline-block
+      vertical-align: top
+      color: #746F6F
+      margin-right: 23px
+    .date
+      display: inline-block
+      vertical-align: top
+      color: #746F6F
+  .title
+    font-size: 21px
+    padding-bottom: 20px
+    @media(max-width: 768px)
+      font-size: 18px
+  .text
+    padding-bottom: 25px
+  .btn-row
+    max-width: 380px
+    text-align: center
+    @media(max-width: 767px)
+      max-width: 200%
+      margin: 0 -20px
+.partners-icons
+  font-size: 0
+  padding-bottom: 75px
+  @media(max-width: 1023px)
+    padding-bottom: 20px
+    margin: 0 -15px
+    text-align: center
+  .block
+    display: inline-block
+    vertical-align: top
+    width: 20%
+    text-align: center
+    font-size: 21px
+    padding: 0 25px 25px
+    color: #000000
+    text-transform: uppercase
+    @media(max-width: 1023px)
+      font-size: 15px
+      width: 150px
+      padding: 0
+      margin: 0 15px 30px
+    .icon
+      display: flex
+      align-items: flex-end
+      justify-content: center
+      height: 100px
+      @media(max-width: 1023px)
+        height: 50px
+      img
+        max-width: 100px
+        @media(max-width: 1023px)
+          max-width: 70px
+          max-height: 50px
+    .name
+      padding-top: 15px

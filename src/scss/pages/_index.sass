@@ -115,7 +115,55 @@
             @media(max-width: 500px)
               width: 18px
               height: 10px
-
+.b-bann
+  position: relative
+  a
+    color: #FFFFFF
+    text-decoration: none
+  .banner-wrap
+    &.bann1
+      .b-text
+        position: absolute
+        top: 0
+        left: 15px
+        width: 50%
+        height: 100%
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        .title
+          letter-spacing: 0.02em
+          font-size: 42px
+          font-weight: 500
+        .text
+          font-size: 36px
+          letter-spacing: 0.02em
+          text-transform: uppercase
+    &.bann2
+      .b-text
+        position: absolute
+        top: 0
+        right: 15px
+        width: 50%
+        height: 100%
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        .title
+          letter-spacing: 0.02em
+          font-size: 42px
+          font-weight: 500
+        .text
+          font-size: 36px
+          letter-spacing: 0.02em
+          text-transform: uppercase
+      
+          
+          
 .main-two-banners
   max-width: 1105px
   margin: 0 auto
@@ -129,6 +177,8 @@
     padding: 0 15px
     width: 50%
     text-align: center
+    a:hover
+      opacity: .8
     @media(max-width: 767px)
       width: 100%
       margin-bottom: 20px
@@ -181,7 +231,15 @@
       width: 50%
       padding-left: 5px
       padding-right: 5px
-
+    a
+      color: inherit
+      text-decoration: none
+      display: block
+      width: 100%
+      vertical-align: top
+      &:hover
+        text-decoration: underline
+        opacity: .8
     .img
       margin-bottom: 5px
       display: flex
@@ -204,6 +262,12 @@
 .slider-lider
   padding-bottom: 40px
   margin: 0 -15px
+  @media(max-width: 1024px)
+    padding-left: 11px
+    padding-right: 11px
+    margin: 0
+    overflow: hidden
+    max-width: calc(100vw - 30px)
   .slider
     display: flex
     .slide
@@ -226,10 +290,14 @@
     transform: rotate(-180deg)
     &:hover
       background: url(../img/arr-r2.png) 50% 50% no-repeat
+      transform: rotate(0deg)
   .slick-next
     transform: rotate(0deg)
     left: auto
     right: -15px
+    &:hover
+      background: url(../img/arr-r2.png) 50% 50% no-repeat
+      transform: rotate(-180deg)
 .lider_item
   max-width: 275px
   margin: 0 auto
@@ -238,9 +306,15 @@
   border: 1px solid #FF8A00
   text-align: center
   min-height: 522px
+  @media(max-width: 1024px)
+    min-height: 100%
+  
   a
     color: #000000
     text-decoration: none
+    &:hover
+      text-decoration: underline
+      opacity: .8
   .img
     height: 220px
     display: flex
@@ -258,6 +332,8 @@
     overflow: hidden
     line-height: 1.2
     margin-bottom: 5px
+    @media(max-width: 1024px)
+      font-size: 20px
     &--3
       height: 75px
   .small-text
@@ -269,11 +345,15 @@
     overflow: hidden
     font-size: 18px
     margin-bottom: 10px
+    @media(max-width: 1024px)
+      font-size: 14px
   .option
     font-size: 18px
     color: #000
     margin-bottom: 0
     min-height: 40px
+    @media(max-width: 1024px)
+      font-size: 14px
   .bottom-row
     display: flex
     justify-content: space-between
@@ -287,6 +367,8 @@
     color: #000
     font-weight: bold
     text-align: left
+    @media(max-width: 1024px)
+      font-size: 20px
   .b-buy
     position: absolute
     bottom: 0
@@ -359,6 +441,8 @@
     display: flex
     float: none
     height: auto
+    a:hover
+      opacity: .8
     @media(max-width: 500px)
       display: block
     &>div

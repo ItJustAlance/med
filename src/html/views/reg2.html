@@ -1,0 +1,206 @@
+<% var classes = {
+bodyClass: "home-page"
+}; %>
+
+<%= _.template(require('./../includes/header.html').default)(classes) %>
+<div class="icon-sprite" style="position: absolute; width: 0; height: 0;" aria-hidden="true"><%= compilation.assets['spritemap.svg'].source() %></div>
+
+<section class="main">
+  <div class="container">
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="reg-tabs">
+          <div class="item-reg reg1 active">
+            <div class="icon"><img class="shpric" src="img/syringe.svg" alt=""></div>
+            <div class="b-btn">
+              <a href="#" class="btn-link">
+                для врачей
+                <svg class="icon icon-arr-r"><use xlink:href="#icon-arr-r"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="item-reg reg2">
+            <div class="icon"><img class="market" src="img/market.svg" alt=""></div>
+            <div class="b-btn">
+              <a href="#" class="btn-link">
+                магазин
+                <svg class="icon icon-arr-r"><use xlink:href="#icon-arr-r"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="registration-wrapper">
+          <div class="b-tabs tab-reg">
+            <ul class="tabs">
+              <li class="current">Физическое лицо</li>
+              <li>Юридическое  лицо</li>
+            </ul>
+            <div class="box visible">
+              <div class="form-registration">
+                <div class="h-title">Зарегистрироваться как специалист</div>
+                <div class="form-row">
+                  <input type="text" placeholder="Имя*" class="input">
+                </div>
+                <div class="form-row">
+                  <input type="text" placeholder="Отчество*" class="input">
+                </div>
+                <div class="form-row">
+                  <input type="text" placeholder="Фамилия*" class="input">
+                </div>
+                <div class="form-row">
+                  <input type="text" placeholder="Дата рождения*" class="input">
+                </div>
+                <div class="form-row">
+                  <input type="text" placeholder="+7 (___) ___-__-_" class="input phone_mask">
+                </div>
+                <div class="form-row">
+                  <input type="text" placeholder="E-Mail" class="input">
+                </div>
+                <div class="form-row">
+                  <input type="text" placeholder="Город*" class="input">
+                </div>
+                <div class="form-row">
+                  <select class="select">
+                    <option>Образование</option>
+                    <option value="">Высшее медицинское</option>
+                    <option value="">Среднее медицинское</option>
+                    <option value="">Косметолог-Эстетист</option>
+                  </select>
+                </div>
+                <div class="two-row">
+                  <div class="browse-row">
+                    <label for="">Диплом*</label>
+                    <div class="custom-file">
+                      <span class="text">Название файла</span>
+                      <span class="btn-orange">Загрузить</span>
+                      <input type="file" class="file" />
+                    </div><!--end custom-file -->
+                  </div>
+                  <div class="browse-row">
+                    <label for="">Фото паспорта (разворот с фото)*</label>
+                    <div class="custom-file">
+                      <span class="text">Название файла</span>
+                      <span class="btn-orange">Загрузить</span>
+                      <input type="file" class="file" />
+                    </div><!--end custom-file -->
+                  </div>
+                </div><!--end two-row -->
+                <div class="two-row">
+                  <div class="browse-row">
+                    <label for="">Сертификат*</label>
+                    <div class="custom-file">
+                      <span class="text">Название файла</span>
+                      <span class="btn-orange">Загрузить</span>
+                      <input type="file" class="file" />
+                    </div><!--end custom-file -->
+                  </div>
+                  <div class="browse-row">
+                    <label for="">Если Ваша фамилия в документах отличается, приложите св-во о
+                      браке*
+                    </label>
+                    <div class="custom-file">
+                      <span class="text">Название файла</span>
+                      <span class="btn-orange">Загрузить</span>
+                      <input type="file" class="file" />
+                    </div><!--end custom-file -->
+                  </div>
+                </div><!--end two-row -->
+                <div class="file-small-text">* Файлы в форматах pdf, png, jpg (не более 5 МБ)</div>
+                <div class="itogo-checkers">
+                  <div class="itogo-checkers__row">
+                    <div class="b-check">
+                      <label>
+                        <input type="checkbox">
+                        <span>Я даю согласие на обработку персональных данных</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="itogo-checkers__row">
+                    <div class="b-check">
+                      <label>
+                        <input type="checkbox">
+                        <span><a href="#">Договор оферты</a></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-btn-reg"><a href="#" class="btn-orange">Продолжить</a></div>
+              </div><!--end form-registration -->
+
+            </div><!--end box -->
+            <div class="box">
+              <div class="form-registration">
+                <div class="form-reg-border">
+                  <div class="section-browse">
+                    <div class="browse-row">
+                      <label for="">Медицинская лицензия*</label>
+                      <div class="custom-file">
+                        <span class="text">Название файла</span>
+                        <span class="btn-orange">Загрузить</span>
+                        <input type="file" class="file" />
+                      </div><!--end custom-file -->
+                    </div>
+                    <div class="browse-row">
+                      <label for="">Реквизиты организации*</label>
+                      <div class="custom-file">
+                        <span class="text">Название файла</span>
+                        <span class="btn-orange">Загрузить</span>
+                        <input type="file" class="file" />
+                      </div><!--end custom-file -->
+                    </div>
+                  </div><!--end section-browse -->
+                  <div class="h-title">ответственное за закупку лицо</div>
+                  <div class="form-row">
+                    <input type="text" placeholder="Имя*" class="input">
+                  </div>
+                  <div class="form-row">
+                    <input type="text" placeholder="Отчество*" class="input">
+                  </div>
+                  <div class="form-row">
+                    <input type="text" placeholder="Фамилия*" class="input">
+                  </div>
+                  <div class="form-row">
+                    <input type="text" placeholder="" class="input phone_mask">
+                  </div>
+                  <div class="form-row">
+                    <input type="text" placeholder="E-Mail" class="input">
+                  </div>
+
+                </div><!--end form-reg-border -->
+                  <div class="itogo-checkers">
+                    <div class="itogo-checkers__row">
+                      <div class="b-check">
+                        <label>
+                          <input type="checkbox">
+                          <span>Я даю согласие на обработку персональных данных</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="itogo-checkers__row">
+                      <div class="b-check">
+                        <label>
+                          <input type="checkbox">
+                          <span><a href="#">Договор оферты</a></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-btn-reg"><a href="#" class="btn-orange">зарегистрироваться</a></div>
+
+              </div><!--end form-registration -->
+            </div><!--end box -->
+          </div><!--end b-tabs -->
+
+        </div><!--end registration-wrapper -->
+
+
+
+      </div><!--end content -->
+    </div><!--end content-wrapper -->
+  </div><!--end container -->
+</section><!--end content -->
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
+
+<%= _.template(require('./../includes/end-of-page.html').default)() %>
