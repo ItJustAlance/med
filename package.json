@@ -17,7 +17,7 @@
     "infinite-scroll": "^3.0.6",
     "inputmask": "^5.0.6",
     "isotope-layout": "^3.0.6",
-    "jquery": "^3.5.1",
+    "jquery": "^3.7.0",
     "jquery-bridget": "^2.0.1",
     "jquery-ui": "^1.13.0",
     "lazyload": "^2.0.0-rc.2",
